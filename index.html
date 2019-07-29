@@ -8,93 +8,100 @@
   <meta name="description" content="Matrimonio Matteo e Alessandra">
   <meta name="keywords" content="wedding, bride, groom">
   <link href="https://fonts.googleapis.com/css?family=Alice|Zilla+Slab:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 
 <body>
-  <section class="home-section" data-section="home">
-    <nav class="navbar navbar-default navbar-expand-md wedding-navbar">
-      <div class="container">
-        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbar-collapse">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="index.html" title="Wedding">M<em>&amp;</em>A</a>
-        <div id="navbar-collapse" class="navbar-collapse collapse navbar-inner justify-content-stretch ">
-          <ul class="nav navbar-nav ml-auto">
-            <li class="active">
-              <a class="nav-link" href="#" data-nav-section="home">Home</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#" data-nav-section="when-where">Quando &amp; Dove</a>
-            </li>
-            <li>
-                <a class="nav-link" href="#" data-nav-section="trip">Il Nostro Viaggio</a>
-              </li>
-            <!--<li><a class="nav-link" href="#" data-nav-section="gallery">Gallery</a></li>-->
-          </ul>
+  <nav class="navbar navbar-expand-md">
+    <a class="navbar-brand" href="index.html">M<em>&amp;</em>A</a>
+    <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#main-navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main-navigation">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="active">
+          <a class="nav-link" href="index.html" data-nav-section="home">Home</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#when-where-section" data-nav-section="when-where">Quando &amp; Dove</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#trip-section" data-nav-section="trip">Il Nostro Viaggio</a>
+        </li>
+        <!--<li><a class="nav-link" href="#" data-nav-section="gallery">Gallery</a></li>-->
+      </ul>
+    </div>
+  </nav>
+
+
+  <section id="home-section" class="home-section" data-section="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div></div>
+        </div>
+        <div class="col-md-12 text-center">
+          <h1>Matteo
+            <em>&amp;</em> Alessandra
+          </h1>
         </div>
       </div>
-    </nav>
-    <div class="container text-intro-wrap">
       <div class="row">
-        <div class="col-md-12 text-center text-intro probootstrap-animate">
-          <h1>Matteo
-            <em>&amp;</em> Alessandra</h1>
+        <div class="col-md-12 text-center">
           <h2>20 Giugno 2020</h2>
         </div>
       </div>
-    </div>
-  </section>
-
-
-  
-  <section class="section section-colored wedding-countdown">
-    <div class="container">
       <div class="row">
-        <div class="col-md-12 text-center animate">
-          <h4>Mancano</h4>
+        <div class="col-md-12 text-center">
+          <h2>Mancano</h2>
         </div>
-        <div class="col-md-12 animate">
+        <div class="col-md-12">
           <div class="date-countdown"></div>
         </div>
       </div>
     </div>
   </section>
-  
 
-  <div class="probootstrap-section probootstrap-section-colored" data-section="when-where">
+  <!--
+
+  <section id="when-where-section" class="" data-section="when-where">
     <div class="container">
       <div class="row mb40 text-center">
-        <div class="col-md-12 probootstrap-animate">
+        <div class="col-md-12">
           <h2 class="mt0">Quando &amp; Dove</h2>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 probootstrap-animate">
+        <div class="col-md-6">
           <p>
             <img src="images/chiesa.jpg" alt="" class="img-responsive img-rounded">
           </p>
           <h3>Cerimonia</h3>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+            blind texts.
             Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
 
         </div>
-        <div class="col-md-6 probootstrap-animate">
+        <div class="col-md-6">
           <p>
             <img src="images/ristorante.jpg" alt="" class="img-responsive img-rounded">
           </p>
           <h3>Wedding Party</h3>
-          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic
-            country, in which roasted parts of sentences fly into your mouth question ran over her cheek, then she continued
+          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+            paradisematic
+            country, in which roasted parts of sentences fly into your mouth question ran over her cheek, then she
+            continued
             her way.</p>
         </div>
       </div>
     </div>
-  </div>
-<!--
+  </section>
 
+  <section id="trip-section">
+
+  </section>
 
   <footer class="probootstrap-footer">
     <div class="container text-center">
@@ -108,11 +115,14 @@
 
   -->
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script src="scripts/main.js"></script>
 </body>

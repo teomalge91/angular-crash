@@ -1,17 +1,6 @@
-html {
-  overflow-x: hidden;
-  font-size: 1.25em;
-}
 
-body {
-  background: #ffffff;
-  color: #8b8e94;
-  line-height: 1.7;
-  font-size: 18px;
-  font-family: "Alice", serif;
-}
 
-.wedding-navbar {
+/*.wedding-navbar {
   background: transparent;
 }
 
@@ -19,31 +8,78 @@ body {
   background:transparent;
 }
 
-.wedding-navbar .navbar-brand {
-  text-transform: uppercase;
+.wedding-navbar
+
+
+*/
+
+html {
+  overflow-x: hidden;
+  font-size: 1.25em;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+  color: #8b8e94;
+  line-height: 1.7;
+  font-size: 18px;
   font-family: "Alice", serif;
-  color: #000;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+  color: #8b8e94;
   font-size: 26px;
   font-weight: 700;
+}
+
+.navbar-brand:hover {
+  color: #000;
 }
 
 .nav-link,
 .navbar-brand {
   cursor: pointer;
+  
 }
 
 .nav-link {
-  font-family: "Alice", serif;
-  color: #000;
+  color: #8b8e94;
   font-size: 26px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-right: 1em !important;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+.section { 
+  height: 100vh;
 }
 
 .home-section {
-  position: relative;
   background: #b1b881 url("../images/background.jpg") center;
-  border: none;
-  margin: 0 0 0;
-  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 90vh;
 }
+
+.home-section h1{
+  margin: 3%;
+}
+.home-section h2{
+  margin: 3%;
+}
+
+
+
+.row > div { min-height:100px; border:1px solid red;}
