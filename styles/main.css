@@ -73,21 +73,14 @@ body {
   height: 90vh;
 }
 
-.home-section h1{
-  padding: 3%;
-}
-.home-section h2{
-  padding: 3%;
-}
-
 .home-section a {
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
   left: 50%;
   z-index: 2;
   display: inline-block;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
   color: #fff;
   font : normal 400 20px/1 "Alice", serif;
   letter-spacing: .001em;
@@ -172,6 +165,7 @@ body {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  z-index: 2;
 }
 .btn-circle.btn-lg {
   width: 50px;
@@ -182,9 +176,22 @@ body {
   border-radius: 25px;
 }
 
-
 .topButton:hover {
   color: rgb(0, 0, 0);; /* Add a dark-grey background on hover */
 }
 
+.countdown-section {
+  background: #8b8e94 center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+}
+
+.countdown-section h2{
+  color: #000;
+}
+.countdown-section h3{
+  color: #000;
+}
 .row > div { min-height:100px; border:1px solid red;}
