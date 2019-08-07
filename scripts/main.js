@@ -1,5 +1,5 @@
 
-//Funzione per il countdown
+//funzione per il countdown
 var weddingday = new Date(2020, 05, 20, 15, 00);
 var timing = setInterval(
     function () {
@@ -23,7 +23,7 @@ var timing = setInterval(
 
 window.onscroll = function () { scrollFunction() };
 
-//Mostra / Nasconde bottone go to top
+//mostra / nasconde bottone go to top
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("top-button").style.display = "block";
@@ -33,15 +33,14 @@ function scrollFunction() {
 }
 //al click sul top button, riporta in cima
 function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    $('html, body').animate({ scrollTop: 0}, 350, 'linear');
 }
 
 //funzione per l'animazione di scroll al click su un link 
 $(function() {
     $('a[href*="#"]').on('click', function(e) {
       e.preventDefault();
-      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 350, 'linear');
     });
   });
 
