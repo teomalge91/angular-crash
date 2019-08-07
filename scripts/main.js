@@ -1,3 +1,5 @@
+
+//Funzione per il countdown
 var weddingday = new Date(2020, 05, 20, 15, 00);
 var timing = setInterval(
     function () {
@@ -21,6 +23,7 @@ var timing = setInterval(
 
 window.onscroll = function () { scrollFunction() };
 
+//Mostra / Nasconde bottone go to top
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("top-button").style.display = "block";
@@ -28,17 +31,30 @@ function scrollFunction() {
         document.getElementById("top-button").style.display = "none";
     }
 }
-
-// When the user clicks on the button, scroll to the top of the document
+//al click sul top button, riporta in cima
 function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-//scroll down
+//funzione per l'animazione di scroll al click su un link 
 $(function() {
     $('a[href*="#"]').on('click', function(e) {
       e.preventDefault();
       $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
     });
   });
+
+
+//Aggiunge / toglie classe solid se la pagina è stata scollata
+//   $(document).ready(function() {
+//     // Transition effect for navbar 
+//     $(window).scroll(function() {
+//       // checks if window is scrolled more than 500px, adds/removes solid class
+//       if($(this).scrollTop() > 800) { 
+//           $('.navbar').addClass('solid');
+//       } else {
+//           $('.navbar').removeClass('solid');
+//       }
+//     });
+// });

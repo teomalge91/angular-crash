@@ -11,16 +11,15 @@ body {
   font-family: "Alice", serif;
 }
 
-.cover-div{
-  background: #ffff url("../images/background.jpg") center;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  height: 100vh;
-}
+/* NAVBAR */
 
-.navbar-inner {
-  background:transparent;
+.navbar {
+  height: 10vh;
+  background-color: transparent;
+  border: none;
+  color: white;
+  z-index: 100;
+  transition: background-color 1s ease 0s;
 }
 
 .navbar-collapse {
@@ -28,7 +27,6 @@ body {
 }
 
 .navbar-brand {
-  
   color: #8b8e94;
   font-size: 26px;
   font-weight: 700;
@@ -56,8 +54,18 @@ body {
   color: #000;
 }
 
+/* HOME */
+
 .home-container{
-  padding-top: 5%;
+  padding-top: 15vh;
+}
+
+.home-section{
+  background: #ffff url("../images/background.jpg") center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
 }
 
 .home-section h1{
@@ -71,6 +79,8 @@ body {
   font-size: 4rem;
   font-family: "Alice", serif;
 }
+
+/* SCROLL BUTTON */
 
 .home-section a {
   position: absolute;
@@ -118,6 +128,8 @@ body {
   box-sizing: border-box;
 }
 
+/* TOP BUTTON */
+
 .topButton {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -147,12 +159,13 @@ body {
   color: rgb(0, 0, 0);; /* Add a dark-grey background on hover */
 }
 
+/* COUNTDOWN */
+
 .countdown-section {
   background: #ffff center;
   background-size: cover;
   background-position: center;
-  position: relative;
-  height: 70vh;
+  height: auto; 
 }
 
 .countdown-section h2{
@@ -163,7 +176,7 @@ body {
 }
 
 .countdown-container{
-  padding-top: 5%;
+  padding-top: 10vh;
 }
 
 .countdown-time{
@@ -172,7 +185,7 @@ body {
   font-size: 2.5rem;
 }
 
-
+/* MEDIA QUERIES */
 
 @media (max-width: 810px) {
 
@@ -201,4 +214,19 @@ body {
   }
 }
 
+/* .navbar.solid {
+  background-color: rgba(0,0,0,0.4);
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px grey;
+}
+
+.navbar.solid .navbar-brand {
+  color: #fff;
+  transition: color 1s ease 0s;
+}
+
+.navbar.solid .navbar-nav > li > a {
+  color: #fff;
+  transition: color 1s ease 0s;
+} */
 /* .row > div { min-height:100px; border:1px solid red;} */

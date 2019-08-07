@@ -14,49 +14,52 @@
   <script src="https://kit.fontawesome.com/3a44d4acb3.js"></script>
 </head>
 
-<!-- fixed-top o sticky-top o così com'è -->
-
 <body>
-  <div class="cover-div">
-    <nav class="navbar-inner navbar navbar-expand-md ">
-      <a class="navbar-brand" href="index.html">M<em>&amp;</em>A</a>
-      <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#main-navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse navbar-inner" id="main-navigation">
-        <ul class="nav navbar-nav ml-auto">
-          <li class="active">
-            <a class="nav-link" href="index.html" data-toggle="collapse" data-target=".navbar-collapse.show">Home</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#when-where-section" data-toggle="collapse" data-target=".navbar-collapse.show">Quando &amp; Dove</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#trip-section" data-toggle="collapse" data-target=".navbar-collapse.show">Il Nostro Viaggio</a>
-          </li>
-          <!--<li><a class="nav-link" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">Gallery</a></li>-->
-        </ul>
-      </div>
-    </nav>
-    <section id="home-section" class="home-section" data-section="home">
-      <div class="container home-container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h1>Matteo
-              <em>&amp;</em> Alessandra
-            </h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h2>20 Giugno 2020</h2>
-          </div>
-        </div>
-      </div>
-      <a href="#countdown-section"><span></span>Scorri</a>
-    </section>
-  </div>
 
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md fixed-top">
+    <a class="navbar-brand" href="index.html">M<em>&amp;</em>A</a>
+    <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#main-navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main-navigation">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="active">
+          <a class="nav-link" href="#home-section" data-toggle="collapse" data-target=".navbar-collapse.show">Home</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#when-where-section" data-toggle="collapse"
+            data-target=".navbar-collapse.show">Quando &amp; Dove</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#trip-section" data-toggle="collapse" data-target=".navbar-collapse.show">Il Nostro
+            Viaggio</a>
+        </li>
+        <!--<li><a class="nav-link" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">Gallery</a></li>-->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home-section" class="home-section" data-section="home">
+    <div class="container home-container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>Matteo
+            <em>&amp;</em> Alessandra
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2>20 Giugno 2020</h2>
+        </div>
+      </div>
+    </div>
+    <a href="#countdown-section"><span></span>Scorri</a>
+  </section>
+
+  <!-- COUNTDOWN -->
   <section id="countdown-section" class="countdown-section">
     <div class="container countdown-container" id="countdown">
       <div class="row">
@@ -90,9 +93,10 @@
           </div>
         </div>
       </div>
-
     </div>
   </section>
+
+  <!-- DOVE E QUANDO -->
   <section id="when-where-section" class="" data-section="when-where">
     <div class="container">
       <div class="row mb40 text-center">
@@ -126,14 +130,17 @@
     </div>
   </section>
 
+  <!-- VIAGGIO -->
   <section id="trip-section">
 
   </section>
 
+  <!-- TOP BUTTON -->
   <button onclick="topFunction()" id="top-button" class="btn btn-default btn-circle btn-lg topButton" title="Su">
     <i class="fas fa-arrow-up"></i>
   </button>
 
+  <!-- FOOTER -->
   <footer class="probootstrap-footer">
     <div class="container text-center">
       <div class="row">
