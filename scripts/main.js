@@ -5,7 +5,7 @@ var timing = setInterval(
     function () {
         var currentDate = new Date().getTime();
         var timeLeft = weddingday - currentDate;
-        if (timeLeft > 0){
+        if (timeLeft > 0) {
             var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24)); //conversion miliseconds on days 
             document.getElementById("days").innerHTML = days;
             var hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); //conversion miliseconds on hours
@@ -15,7 +15,7 @@ var timing = setInterval(
             var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);//conversion miliseconds on seconds
             document.getElementById("seconds").innerHTML = seconds;
         }
-        else{
+        else {
             clearInterval(timing);
             document.getElementById("countdown-section").style.display = "none";
         }
@@ -33,27 +33,27 @@ function scrollFunction() {
 }
 //al click sul top button, riporta in cima
 function topFunction() {
-    $('html, body').animate({ scrollTop: 0}, 350, 'linear');
+    $('html, body').animate({ scrollTop: 0 }, 350, 'linear');
 }
 
 //funzione per l'animazione di scroll al click su un link 
-$(function() {
-    $('a[href*="#"]').on('click', function(e) {
-      e.preventDefault();
-      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 350, 'linear');
+$(function () {
+    $('a[href*="#"]').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 350, 'linear');
     });
-  });
+});
 
 
 //Aggiunge / toglie classe solid se la pagina è stata scollata
-//   $(document).ready(function() {
-//     // Transition effect for navbar 
-//     $(window).scroll(function() {
-//       // checks if window is scrolled more than 500px, adds/removes solid class
-//       if($(this).scrollTop() > 800) { 
-//           $('.navbar').addClass('solid');
-//       } else {
-//           $('.navbar').removeClass('solid');
-//       }
-//     });
-// });
+$(document).ready(function () {
+    // Transition effect for navbar 
+    $(window).scroll(function () {
+        // checks if window is scrolled more than 500px, adds/removes solid class
+        if ($(this).scrollTop() > 50) {
+            $('.navbar').addClass('solid');
+        } else {
+            $('.navbar').removeClass('solid');
+        }
+    });
+});

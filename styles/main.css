@@ -16,9 +16,8 @@ body {
 .navbar {
   min-height: 10vh;
   background-color: transparent;
-  color: white;
+  color: #000;
   z-index: 100;
-  transition: background-color 1s ease 0s;
 }
 
 .navbar-collapse {
@@ -52,8 +51,31 @@ body {
 }
 
 .navbar-collapse.collapse.show{
-  background-color: blue;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: background-color 0.5s ease 0s;
+  box-shadow: 0 0 4px grey;
 }
+
+.navbar.solid {
+  background-color: rgba(0,0,0,0.4);
+  transition: background-color 0.5s ease 0s;
+}
+
+/* .navbar.solid .navbar-brand {
+  color: #fff;
+  transition: color 0.5s ease 0s;
+}
+
+.navbar.solid .navbar-nav > li > a {
+  color: #fff;
+  transition: color 0.5s ease 0s;
+}
+
+.navbar.solid .navbar-toggler {
+  color: #fff;
+  transition: color 0.5s ease 0s;
+} */
+
 
 /* HOME */
 
@@ -198,6 +220,10 @@ body {
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {
+  .navbar{
+    background-color: rgba(0,0,0,0.4);
+  }
+  
   .home-section h1{
     font-size: 2.5rem;
   }
@@ -217,19 +243,5 @@ body {
   }
 }
 
-/* .navbar.solid {
-  background-color: rgba(0,0,0,0.4);
-  transition: background-color 1s ease 0s;
-  box-shadow: 0 0 4px grey;
-}
-
-.navbar.solid .navbar-brand {
-  color: #fff;
-  transition: color 1s ease 0s;
-}
-
-.navbar.solid .navbar-nav > li > a {
-  color: #fff;
-  transition: color 1s ease 0s;
-} */
+/*  */
 /* .row > div { min-height:100px; border:1px solid red;} */
