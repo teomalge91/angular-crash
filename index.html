@@ -26,15 +26,15 @@
       <div class="collapse navbar-collapse navbar-inner" id="main-navigation">
         <ul class="nav navbar-nav ml-auto">
           <li class="active">
-            <a class="nav-link" href="index.html" data-nav-section="home">Home</a>
+            <a class="nav-link" href="index.html" data-toggle="collapse" data-target=".navbar-collapse.show">Home</a>
           </li>
           <li>
-            <a class="nav-link" href="#when-where-section" data-nav-section="when-where">Quando &amp; Dove</a>
+            <a class="nav-link" href="#when-where-section" data-toggle="collapse" data-target=".navbar-collapse.show">Quando &amp; Dove</a>
           </li>
           <li>
-            <a class="nav-link" href="#trip-section" data-nav-section="trip">Il Nostro Viaggio</a>
+            <a class="nav-link" href="#trip-section" data-toggle="collapse" data-target=".navbar-collapse.show">Il Nostro Viaggio</a>
           </li>
-          <!--<li><a class="nav-link" href="#" data-nav-section="gallery">Gallery</a></li>-->
+          <!--<li><a class="nav-link" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">Gallery</a></li>-->
         </ul>
       </div>
     </nav>
@@ -58,34 +58,34 @@
   </div>
 
   <section id="countdown-section" class="countdown-section">
-    <div class="container" id="countdown">
+    <div class="container countdown-container" id="countdown">
       <div class="row">
-        <div class="col-12 text-center">
+        <div class="col text-center">
           <h2>Il Matrimonio inizia tra</h2>
         </div>
       </div>
       <div class="row">
-        <div class="col-6 text-center">
+        <div class="col-6 col-md-3 text-center">
           <div id="daysdiv">
-            <h2 id="days"></h2>
+            <h2 id="days" class="countdown-time">0</h2>
             <h3>Giorni</h3>
           </div>
         </div>
-        <div class="col-6 text-center">
+        <div class="col-6 col-md-3 text-center">
           <div id="hoursdiv">
-            <h2 id="hours"></h2>
+            <h2 id="hours" class="countdown-time">0</h2>
             <h3>Ore</h3>
           </div>
         </div>
-        <div class="col-6 text-center">
+        <div class="col-6 col-md-3 text-center">
           <div id="minutesdiv">
-            <h2 id="minutes"></h2>
+            <h2 id="minutes" class="countdown-time">0</h2>
             <h3>Minuti</h3>
           </div>
         </div>
-        <div class="col-6 text-center">
+        <div class="col-6 col-md-3 text-center">
           <div id="secondsdiv">
-            <h2 id="seconds"></h2>
+            <h2 id="seconds" class="countdown-time">0</h2>
             <h3>Secondi</h3>
           </div>
         </div>
