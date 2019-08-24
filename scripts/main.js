@@ -1,3 +1,9 @@
+//funzione per cambiare icona al click sull'hamburger menu
+$(document).ready(function () {
+    $('.navbar-toggler').on('click', function () {
+      $('.animated-icon').toggleClass('open');
+    });
+  });
 
 //funzione per il countdown
 var weddingday = new Date(2020, 05, 20, 15, 00);
