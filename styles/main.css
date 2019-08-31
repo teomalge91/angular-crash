@@ -274,6 +274,11 @@ section {
   overflow: hidden;
 }
 
+.countdown-container{
+  margin-top: 13vh;
+  margin-bottom: 5vh;
+}
+
 .circled {
   width: 8.5rem;
   height: 8.5rem;
@@ -294,11 +299,6 @@ section {
 .countdown-section h3{
   color: #fff;
   font-size: 1.25rem;
-}
-
-.countdown-container{
-  margin-top: 15vh;
-  margin-bottom: 5vh;
 }
 
 .countdown-time{
@@ -342,17 +342,6 @@ section {
   }
 }
 
-@media (max-width: 390px) {
-
-  /* .circled{
-    width: 7rem;
-    height: 7rem;
-  }
-  .countdown-section h3{
-    font-size: 1em;
-  } */
-}
-
 @media (max-width: 338px) {
   .home-section h1{
     font-size: 1.5rem;
@@ -361,6 +350,25 @@ section {
   .home-section h2{
     font-size: 1rem;
   }
+
+  .countdown-container{
+    margin-top: 15vh;
+  }
+
+  .circled {
+    width: 7rem;
+    height: 7rem;
+    border-width: 3px;
+  }
+
+  .countdown-time{
+      font-size: 2rem;
+  }
+
+  .countdown-section h3{
+    font-size: 1rem;
+  }
+
 }
 
 
