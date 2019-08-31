@@ -20,73 +20,51 @@ section {
 /* NAVBAR */
 
 .navbar {
-  min-height: 10vh;
-  background-color: transparent;
-  color: #000;
-  z-index: 100;
+  background: #444;
+  -o-transition: all .6s;
+  -moz-transition: all .6s;
+  -webkit-transition: all .6s;
+  -ms-transition: all .6s;
+  transition: all .6s;
+  backface-visibility: hidden;
 }
 
-.navbar-brand {
-  color: #8b8e94;
-  font-size: 26px;
-  font-weight: 700;
+.navbar.navbar-no-bg {
+  background: #444;
+  background: rgba(0, 0, 0, 0.2);
 }
 
-.navbar-brand:hover {
-  color: #000;
-}
-
-.nav-link,
-.navbar-brand {
-  cursor: pointer;
+.navbar-dark .navbar-nav {
+  font-size: 15px;
+  color: #fff;
   text-transform: uppercase;
 }
 
-.nav-link {
-  color: #8b8e94;
-  font-size: 26px;
-  font-weight: 700;
-}
-
-.nav-link:hover {
-  color: #000;
-}
-
-.navbar-collapse {
-  justify-content: flex-end;
-}
-
-.navbar-collapse.collapse.show{
-  background-color: rgba(0, 0, 0);
-  margin: 0rem -1rem;
-  padding: .5rem 1rem;
-}
-
-.navbar-collapse.collapsing{
-  background-color: rgba(0, 0, 0);
-  margin: 0rem -1rem;
-  padding: .5rem 1rem;
-}
-
-.navbar.solid {
-  background-color: rgba(0,0,0,0.4);
-  transition: background-color 0.5s ease 0s;
-}
-
-/* .navbar.solid .navbar-brand {
+.navbar-dark .navbar-nav .nav-link {
   color: #fff;
-  transition: color 0.5s ease 0s;
+  color: rgba(255, 255, 255, 0.8);
+  border: 0;
 }
 
-.navbar.solid .navbar-nav > li > a {
+.navbar-dark .navbar-nav .nav-link:hover {
   color: #fff;
-  transition: color 0.5s ease 0s;
 }
 
-.navbar.solid .navbar-toggler {
+.navbar-dark .navbar-nav .nav-link:focus {
   color: #fff;
-  transition: color 0.5s ease 0s;
-} */
+  outline: 0;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbar-brand {
+  width: 105px;
+  border: 0;
+}
+
 .animated-icon {
   width: 30px;
   height: 20px;
@@ -122,7 +100,7 @@ section {
 }
   
 .animated-icon span {
-  background: #8b8e94;
+  background: #fff;
 }
   
 .animated-icon span:nth-child(1) {
@@ -321,10 +299,17 @@ section {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 768px) {
-  .navbar{
-    background-color: rgba(0,0,0,0.4);
-  }
+@media (min-width: 768px) and (max-width: 991px) {
+ 
+  .navbar-expand-md .navbar-nav .nav-link { padding-left: 0.6rem; padding-right: 0.6rem; }
+}
+
+@media (max-width: 767px) {
+
+  .navbar.navbar-no-bg { background: #444; }
+  .navbar-dark .navbar-toggler { border-color: #444; }
+  .navbar-dark .navbar-toggler:focus { background: #444; outline: 0; }
+  .navbar-expand-md .navbar-nav .nav-link { padding-top: 0.3rem; padding-bottom: 0.3rem; }
 
   .navbar-collapse ul {
     height: 100vh;

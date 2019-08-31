@@ -1,9 +1,17 @@
+$(document).ready(function () {
+    // toggle "navbar-no-bg" class
+    $('.top-content .text').waypoint(function () {
+        alert('eccomi');
+        $('nav').toggleClass('navbar-no-bg');
+    });
+});
+
 //funzione per cambiare icona al click sull'hamburger menu
 $(document).ready(function () {
     $('.navbar-toggler').on('click', function () {
-      $('.animated-icon').toggleClass('open');
+        $('.animated-icon').toggleClass('open');
     });
-  });
+});
 
 //funzione per il countdown
 var weddingday = new Date(2020, 05, 20, 15, 00);
@@ -47,19 +55,20 @@ $(function () {
     $('a[href*="#"]').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 350, 'linear');
+        $('.animated-icon').toggleClass('open');
     });
 });
 
 
-//Aggiunge / toglie classe solid se la pagina è stata scollata
+// toggle classe "navbar-no-bg" se la pagina è stata scollata
 $(document).ready(function () {
     // Transition effect for navbar 
     $(window).scroll(function () {
         // checks if window is scrolled more than 500px, adds/removes solid class
         if ($(this).scrollTop() > 50) {
-            $('.navbar').addClass('solid');
+            $('.navbar').removeClass('navbar-no-bg');
         } else {
-            $('.navbar').removeClass('solid');
+            $('.navbar').addClass('navbar-no-bg');
         }
     });
 });
