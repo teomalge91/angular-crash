@@ -266,28 +266,46 @@ section {
 /* COUNTDOWN */
 
 .countdown-section {
-  background: #f23e center;
+  background: #fc6d6d center;
   background-size: cover;
   background-position: center;
   position: relative;
-  height: 100vh;
+  height: auto;
+  overflow: hidden;
+}
+
+.circled {
+  width: 8.5rem;
+  height: 8.5rem;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 4px;
+  margin-bottom: 0.5vh;
+  margin-top: 0.5vh;
+}
+
+.heading-row{
+  margin-bottom: 5vh;
 }
 
 .countdown-section h2{
-  color: #8b8e94;
+  color: #fff;
 }
 .countdown-section h3{
-  color: #8b8e94;
+  color: #fff;
+  font-size: 1.25rem;
 }
 
 .countdown-container{
-  padding-top: 20vh;
+  margin-top: 15vh;
+  margin-bottom: 5vh;
 }
 
 .countdown-time{
   font-weight: 900;
   font-family: "Alice", serif;
   font-size: 2.5rem;
+  margin-top: 15%;
 }
 
 /* WHEN & WHERE */
@@ -324,6 +342,17 @@ section {
   }
 }
 
+@media (max-width: 390px) {
+
+  /* .circled{
+    width: 7rem;
+    height: 7rem;
+  }
+  .countdown-section h3{
+    font-size: 1em;
+  } */
+}
+
 @media (max-width: 338px) {
   .home-section h1{
     font-size: 1.5rem;
@@ -334,5 +363,6 @@ section {
   }
 }
 
-/*  */
-/* .row > div { min-height:100px; border:1px solid red;} */
+
+/* 
+.row > div { min-height:100px; border:1px solid red;} */
