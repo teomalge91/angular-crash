@@ -152,7 +152,7 @@ section {
 }
 
 .home-section{
-  background: #ffff url("../images/background.jpg") center;
+  background: #ffff url("../images/home-background.jpg") center;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -266,7 +266,7 @@ section {
 /* COUNTDOWN */
 
 .countdown-section {
-  background: #fc6d6d center;
+  background-image: linear-gradient(#AD2E24,#fc6d6d);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -309,11 +309,30 @@ section {
 }
 
 /* WHEN & WHERE */
-
 .when-where-section{
-  padding-top: 20vh;
-  height: 100vh;
+  background: #fc6d6d center;
+  padding-top: 11vh;
+  min-height: 100vh;
 }
+
+.where-header{
+  margin-bottom: 2vh;
+}
+
+.card{
+  width: 30rem;
+  margin-bottom: 2vh;
+}
+
+.card img{
+  height: 50vh;
+}
+
+.where-header h2{
+  color: #FFF;
+}
+
+
 
 /* MEDIA QUERIES */
 
@@ -342,6 +361,30 @@ section {
   }
 }
 
+@media (max-width: 375px) {
+  .when-where-section{
+    padding-top: 15vh;
+  }
+  
+  .where-header{
+    margin-bottom: 0vh;
+  }
+
+  .where-header h2{
+    font-size: 1.5rem;
+  }
+
+  .card{
+    width: 20rem;
+    margin-bottom: 2vh;
+  }
+  .card img{
+    height: 35vh;
+  }
+  
+  
+}
+
 @media (max-width: 338px) {
   .home-section h1{
     font-size: 1.5rem;
@@ -368,7 +411,6 @@ section {
   .countdown-section h3{
     font-size: 1rem;
   }
-
 }
 
 
