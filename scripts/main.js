@@ -55,7 +55,7 @@ $(function () {
     $('a[href*="#"]').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 350, 'linear');
-        $('.animated-icon').toggleClass('open');
+        $('.animated-icon').removeClass('open'); //icona hamburger menu torna chiusa
     });
 });
 
