@@ -72,3 +72,20 @@ $(document).ready(function () {
         }
     });
 });
+
+function openRestaurantDirections(){
+    var params = 'destination=Via+Imbarcadero+3+23827+Lierna&travelmode=driving'
+    openDirections(params)
+}
+
+function openChurchDirections(){
+    var params = 'destination=Piazza+S.+Ambrogio+23013+Cosio+Valtellino&travelmode=driving'
+    openDirections(params)
+}
+
+function openDirections(params){
+    window.open(
+        'https://www.google.com/maps/dir/?api=1&' + params,
+        '_blank' // <- This is what makes it open in a new window.
+      );
+}
