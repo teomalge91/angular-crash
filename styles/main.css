@@ -103,7 +103,7 @@ section {
 }
 
 .navbar-dark .navbar-nav {
-  font-size: 15px;
+  font-size: 1rem;
   color: #fff;
   text-transform: uppercase;
 }
@@ -406,15 +406,31 @@ section {
 
 @media (min-width: 768px) and (max-width: 991px) {
  
-  .navbar-expand-md .navbar-nav .nav-link { padding-left: 0.6rem; padding-right: 0.6rem; }
+  .navbar-expand-md .navbar-nav .nav-link { 
+    padding-left: 0.6rem; 
+    padding-right: 0.6rem; 
+  }
 }
 
 @media (max-width: 767px) {
 
-  .navbar.navbar-no-bg { background: #444; }
-  .navbar-dark .navbar-toggler { border-color: #444; }
-  .navbar-dark .navbar-toggler:focus { background: #444; outline: 0; }
-  .navbar-expand-md .navbar-nav .nav-link { padding-top: 0.3rem; padding-bottom: 0.3rem; }
+  .navbar.navbar-no-bg { 
+    background: #444; 
+  }
+  .navbar-dark .navbar-toggler { 
+    border-color: #444; 
+  }
+  .navbar-dark .navbar-toggler:focus { 
+    background: #444; 
+    outline: 0; 
+  }
+  .navbar-expand-md .navbar-nav .nav-link { 
+    padding-top: 0.3rem; 
+    padding-bottom: 0.3rem; 
+  }
+  /* .nav-link { 
+    font-size: 2rem; 
+  } */
 
   .navbar-collapse ul {
     height: 100vh;
