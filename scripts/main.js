@@ -1,7 +1,11 @@
+$(window).on("load", function (e) {
+    // Animate loader off screen
+    $(".loader-container").fadeOut("slow");
+  });
+
 $(document).ready(function () {
     // toggle "navbar-no-bg" class
     $('.top-content .text').waypoint(function () {
-        alert('eccomi');
         $('nav').toggleClass('navbar-no-bg');
     });
 });
@@ -39,6 +43,7 @@ window.onscroll = function () { scrollFunction() };
 
 //mostra / nasconde bottone go to top
 function scrollFunction() {
+    return;
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("top-button").style.display = "block";
     } else {
