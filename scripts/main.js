@@ -1,3 +1,4 @@
+//funzione che nasconde il loader quando la pagina è completamente caricata
 $(window).on("load", function (e) {
     // Animate loader off screen
     $(".loader-container").fadeOut("slow");
@@ -79,13 +80,13 @@ $(document).ready(function () {
 });
 
 function openRestaurantDirections(){
-    var params = 'destination=Via+Imbarcadero+3+23827+Lierna&travelmode=driving'
-    openDirections(params)
+    var params = 'destination=Via+Imbarcadero+3+23827+Lierna&travelmode=driving';
+    openDirections(params);
 }
 
 function openChurchDirections(){
-    var params = 'destination=Piazza+S.+Ambrogio+23013+Cosio+Valtellino&travelmode=driving'
-    openDirections(params)
+    var params = 'destination=Piazza+S.+Ambrogio+23013+Cosio+Valtellino&travelmode=driving';
+    openDirections(params);
 }
 
 function openDirections(params){

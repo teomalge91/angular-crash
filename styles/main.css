@@ -393,14 +393,12 @@ section {
 }
 
 .card img{
-  height: 50vh;
+  height: 45vh;
 }
 
 .where-header h2{
   color: #FFF;
 }
-
-
 
 /* MEDIA QUERIES */
 
@@ -410,6 +408,18 @@ section {
     padding-left: 0.6rem; 
     padding-right: 0.6rem; 
   }
+
+  .card{
+    width: 30rem;
+    margin-bottom: 2vh;
+  }
+
+  .card img{
+    height: 30vh;
+  }
+
+  
+
 }
 
 @media (max-width: 767px) {
@@ -428,9 +438,6 @@ section {
     padding-top: 0.3rem; 
     padding-bottom: 0.3rem; 
   }
-  /* .nav-link { 
-    font-size: 2rem; 
-  } */
 
   .navbar-collapse ul {
     height: 100vh;
