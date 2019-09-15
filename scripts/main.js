@@ -91,7 +91,7 @@ function openChurchDirections(){
 
 function openDirections(params){
     window.open(
-        'https://www.google.com/maps/dir/?api=1&' + params,
+        'https://maps.google.com/maps/dir/?api=1&' + params,
         '_blank' // <- This is what makes it open in a new window.
       );
 }
