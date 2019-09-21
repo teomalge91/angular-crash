@@ -8,7 +8,7 @@ $(window).on("load", function (e) {
     // Animate loader off screen
     $(".loader-container").fadeOut("slow");
   });
-
+  
 $(document).ready(function () {
     // toggle "navbar-no-bg" class
     $('.top-content .text').waypoint(function () {
@@ -47,19 +47,19 @@ var timing = setInterval(
 
 window.onscroll = function () { scrollFunction() };
 
-//mostra / nasconde bottone go to top
-function scrollFunction() {
-    return;
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("top-button").style.display = "block";
-    } else {
-        document.getElementById("top-button").style.display = "none";
-    }
-}
-//al click sul top button, riporta in cima
-function topFunction() {
-    $('html, body').animate({ scrollTop: 0 }, 350, 'linear');
-}
+// //mostra / nasconde bottone go to top
+// function scrollFunction() {
+//     return;
+//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//         document.getElementById("top-button").style.display = "block";
+//     } else {
+//         document.getElementById("top-button").style.display = "none";
+//     }
+// }
+// //al click sul top button, riporta in cima
+// function topFunction() {
+//     $('html, body').animate({ scrollTop: 0 }, 350, 'linear');
+// }
 
 //funzione per l'animazione di scroll al click su un link 
 $(function () {
