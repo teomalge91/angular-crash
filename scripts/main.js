@@ -6,6 +6,7 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 // We listen to the resize event
 if (window.DeviceOrientationEvent) {
 	window.addEventListener("deviceorientation", () => {
+        alert('ciao');
         let vh = window.innerHeight * 0.01;
         document.documentElement.style.setProperty('--vh', `${vh}px`);
     });
