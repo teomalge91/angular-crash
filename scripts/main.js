@@ -6,9 +6,11 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 // We listen to the resize event
 window.addEventListener('resize', () => {
     // We execute the same script as before
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  });
+    if(window.innerWidth>window.innerHeight){
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
+});
 
 //funzione che nasconde il loader quando la pagina è completamente caricata
 $(window).on("load", function (e) {
