@@ -224,7 +224,8 @@ section {
   background-size: cover;
   background-position: center;
   position: relative;
-  height: 100vh;
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 .home-section h1{
@@ -380,7 +381,8 @@ section {
 .when-where-section{
   background: #fc6d6d center;
   padding-top: 11vh;
-  min-height: 100vh;
+  min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  min-height: calc(var(--vh, 1vh) * 100);
 }
 
 .where-header{
@@ -440,7 +442,8 @@ section {
   }
 
   .navbar-collapse ul {
-    height: 100vh;
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
   }
   
   .home-section h1{
