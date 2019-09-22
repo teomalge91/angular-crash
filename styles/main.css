@@ -270,7 +270,7 @@ section {
 
 .topButton:hover {
   color: rgb(0, 0, 0);; /* Add a dark-grey background on hover */
-}
+} 
 
 /* SCROLL BUTTON  */
 
@@ -413,6 +413,10 @@ section {
   min-height: calc(var(--vh, 1vh) * 100);
 }
 
+.trip-header h2{
+  color: #FFF;
+}
+
 .text-gray {
   color: #999;
 }
@@ -467,6 +471,9 @@ li.timeline-item::before {
   z-index: 400;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
+/* .timeline-item{
+  background: url("http://i.cdn.ensonhaber.com/resimler/diger/ataturk_3473.jpg");
+} */
 
 /* MEDIA QUERIES */
 

@@ -45,7 +45,7 @@ var timing = setInterval(
         }
     }, 1000);
 
-window.onscroll = function () { scrollFunction() };
+// window.onscroll = function () { scrollFunction() };
 
 // //mostra / nasconde bottone go to top
 // function scrollFunction() {
