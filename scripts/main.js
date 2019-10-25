@@ -45,22 +45,6 @@ var timing = setInterval(
         }
     }, 1000);
 
-// window.onscroll = function () { scrollFunction() };
-
-// //mostra / nasconde bottone go to top
-// function scrollFunction() {
-//     return;
-//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//         document.getElementById("top-button").style.display = "block";
-//     } else {
-//         document.getElementById("top-button").style.display = "none";
-//     }
-// }
-// //al click sul top button, riporta in cima
-// function topFunction() {
-//     $('html, body').animate({ scrollTop: 0 }, 350, 'linear');
-// }
-
 //funzione per l'animazione di scroll al click su un link 
 $(function () {
     $('a[href*="#"]').on('click', function (e) {
