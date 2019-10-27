@@ -29,7 +29,7 @@ var calculateOnResize = function () {
 
 var debounceCalculateOnResize = debounce(function () {
     calculateOnResize();
-});
+}, 250);
 
 //funzione che nasconde il loader quando la pagina è completamente caricata
 $(window).on("load", function (e) {
