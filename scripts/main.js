@@ -3,12 +3,40 @@ let vh = window.innerHeight * 0.01;
 // Then we set the value in the --vh custom property to the root of the document
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
+function debounce(func, wait, immediate) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+};
+
+window.addEventListener('resize', function () {
+    debounceCalculateOnResize();
+}, false);
+
+var calculateOnResize = function () {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+};
+
+var debounceCalculateOnResize = debounce(function () {
+    calculateOnResize();
+});
+
 //funzione che nasconde il loader quando la pagina è completamente caricata
 $(window).on("load", function (e) {
     // Animate loader off screen
     $(".loader-container").fadeOut("slow");
-  });
-  
+});
+
 $(document).ready(function () {
     // toggle "navbar-no-bg" class
     $('.top-content .text').waypoint(function () {
@@ -68,19 +96,19 @@ $(document).ready(function () {
     });
 });
 
-function openRestaurantDirections(){
+function openRestaurantDirections() {
     var params = 'destination=Via+Imbarcadero+3+23827+Lierna&travelmode=driving';
     openDirections(params);
 }
 
-function openChurchDirections(){
+function openChurchDirections() {
     var params = 'destination=Piazza+S.+Ambrogio+23013+Cosio+Valtellino&travelmode=driving';
     openDirections(params);
 }
 
-function openDirections(params){
+function openDirections(params) {
     window.open(
         'https://maps.google.com/maps/dir/?api=1&' + params,
         '_blank' // <- This is what makes it open in a new window.
-      );
+    );
 }
