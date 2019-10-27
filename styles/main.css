@@ -1,10 +1,3 @@
-@font-face {
-  font-family: 'Sifonn Pro';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Sifonn Pro'), url('SIFONN_PRO.woff') format('woff');
-  }
-  
 html {
   overflow-x: hidden;
   font-size: 1.25em;
@@ -16,7 +9,7 @@ body {
   color: #8b8e94;
   line-height: 1.7;
   font-size: 18px;
-  font-family: 'Charm', cursive;
+  font-family: 'Forum', cursive;
 }
 
 section {
@@ -111,7 +104,7 @@ section {
 }
 
 .navbar-dark .navbar-nav {
-  font-size: 1rem;
+  font-size: 2.5vh;
   color: #fff;
   text-transform: uppercase;
 }
@@ -139,6 +132,11 @@ section {
 .navbar-brand {
   width: 105px;
   border: 0;
+  font-family: 'Mr Dafoe', cursive !important;
+}
+
+.navbar-brand a{
+  font-family: 'Mr Dafoe', cursive !important;
 }
 
 .animated-icon {
@@ -237,14 +235,18 @@ section {
 }
 
 .home-section h1{
-  font-size: 5.5rem;
-  font-family: 'Dancing Script', cursive;
-  font-weight: bold;
+  font-size: 20vh;
+  font-family: 'Mr Dafoe', cursive;
 }
 
-.home-section h2{
-  font-size: 4rem;
-  font-family: 'Dancing Script', cursive;
+.home-section h3{
+  font-size: 10vh;
+  font-family: 'Mr Dafoe', cursive;
+}
+
+.home-section h4{
+  font-size: 5vh;
+  font-family: 'Forum', cursive;
 }
 
 /* SCROLL BUTTON  */
@@ -253,8 +255,8 @@ section {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   color: #fff;
-  font-family: 'Charm', cursive;
-  font : normal 18px/1 'Charm', cursive;
+  font-family: 'Forum', cursive;
+  font : normal 18px/1 'Forum', cursive;
   letter-spacing: .001em;
   text-decoration: none;
   transition: opacity .3s;
@@ -344,13 +346,13 @@ section {
 }
 .countdown-section h3{
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 3.5vh;
 }
 
 .countdown-time{
   font-weight: 900;
-  font-family: 'Charm', cursive;
-  font-size: 2.5rem;
+  font-family: 'Forum', cursive;
+  font-size: 5vh;
   margin-top: 15%;
 }
 
@@ -453,7 +455,7 @@ li.timeline-item::before {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1024px) {
  
   .navbar-expand-md .navbar-nav .nav-link { 
     padding-left: 0.6rem; 
@@ -467,6 +469,25 @@ li.timeline-item::before {
 
   .card img{
     height: 30vh;
+  }
+
+  .home-section h1{
+    font-size: 20vw;
+  }
+
+  .home-section h3{
+    font-size: 10vw;
+  }
+
+  .home-section h4{
+    font-size: 10vw;
+  }
+  .countdown-section h3{
+    font-size: 3vw;
+  }
+  
+  .countdown-time{
+    font-size: 5vw;
   }
 }
 
@@ -493,11 +514,15 @@ li.timeline-item::before {
   }
   
   .home-section h1{
-    font-size: 2.5rem;
+    font-size: 20vw;
   }
 
-  .home-section h2{
-    font-size: 2rem;
+  .home-section h3{
+    font-size: 10vw;
+  }
+
+  .home-section h4{
+    font-size: 10vw;
   }
 }
 
@@ -510,10 +535,6 @@ li.timeline-item::before {
     margin-bottom: 0vh;
   }
 
-  .where-header h2{
-    font-size: 1.5rem;
-  }
-
   .card{
     width: 20rem;
     margin-bottom: 2vh;
@@ -524,30 +545,15 @@ li.timeline-item::before {
 }
 
 @media (max-width: 338px) {
-  .home-section h1{
-    font-size: 1.5rem;
-  }
-
-  .home-section h2{
-    font-size: 1rem;
-  }
 
   .countdown-container{
     margin-top: 15vh;
   }
 
   .circled {
-    width: 7rem;
-    height: 7rem;
+    width: 40vw;
+    height: 40vw;
     border-width: 3px;
-  }
-
-  .countdown-time{
-      font-size: 2rem;
-  }
-
-  .countdown-section h3{
-    font-size: 1rem;
   }
 }
 
