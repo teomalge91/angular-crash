@@ -3,33 +3,19 @@ let vh = window.innerHeight * 0.01;
 // Then we set the value in the --vh custom property to the root of the document
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-function debounce(func, wait, immediate) {
-	var timeout;
-	return function() {
-		var context = this, args = arguments;
-		var later = function() {
-			timeout = null;
-			if (!immediate) func.apply(context, args);
-		};
-		var callNow = immediate && !timeout;
-		clearTimeout(timeout);
-		timeout = setTimeout(later, wait);
-		if (callNow) func.apply(context, args);
-	};
+var previousWidth = window.innerWidth;
+var checkOrientation = function () {
+    if (previousWidth !== window.innerWidth) {
+        previousWidth = window.innerWidth;
+        // orientation changed
+        // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+        let vh = window.innerHeight * 0.01;
+        // Then we set the value in the --vh custom property to the root of the document
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
 };
 
-window.addEventListener('resize', function () {
-    debounceCalculateOnResize();
-}, false);
-
-var calculateOnResize = function () {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-};
-
-var debounceCalculateOnResize = debounce(function () {
-    calculateOnResize();
-}, 250);
+window.addEventListener("resize", checkOrientation, false);
 
 //funzione che nasconde il loader quando la pagina è completamente caricata
 $(window).on("load", function (e) {
