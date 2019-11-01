@@ -132,6 +132,7 @@ section {
 .navbar-brand {
   width: 105px;
   border: 0;
+  margin-left: 2vw;
 }
 
 .navbar-brand a{
@@ -358,7 +359,7 @@ section {
 /* WHEN & WHERE */
 .when-where-section{
   background: #fc6d6d center;
-  padding-top: 11vh;
+  padding-top: 15vh;
   min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   min-height: calc(var(--vh, 1vh) * 100);
 }
@@ -459,6 +460,7 @@ li.timeline-item::before {
   .navbar-expand-md .navbar-nav .nav-link { 
     padding-left: 0.6rem; 
     padding-right: 0.6rem; 
+    font-size: 2vh;
   }
 
   .card{
@@ -491,6 +493,10 @@ li.timeline-item::before {
 }
 
 @media (max-width: 767px) and (orientation: portrait){
+
+  .navbar-expand-md .navbar-nav .nav-link { 
+    font-size: 4vh;
+  }
 
   .navbar.navbar-no-bg { 
     background: #444; 
@@ -526,6 +532,11 @@ li.timeline-item::before {
 }
 
 @media (max-width: 375px) and (orientation: portrait){
+  
+  .navbar-expand-md .navbar-nav .nav-link { 
+    font-size: 4vh;
+  }
+
   .when-where-section{
     padding-top: 15vh;
   }
@@ -545,8 +556,16 @@ li.timeline-item::before {
 
 @media (max-width: 338px) and (orientation: portrait) {
 
+  .navbar-expand-md .navbar-nav .nav-link { 
+    font-size: 4vh;
+  }
+
   .countdown-container{
     margin-top: 15vh;
+  }
+
+  .when-where-section{
+    margin-top: 20vh;
   }
 
   .circled {
