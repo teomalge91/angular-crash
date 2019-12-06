@@ -522,41 +522,27 @@ section {
   right: 0;
 }
 
-@media screen and (max-width: 768px) {
-  .timeline::before {
-    left: 50px;
-  }
-  .timeline .timeline-img {
-    left: 50px;
-  }
-  .timeline .timeline-content {
-    max-width: 100%;
-    width: auto;
-    margin-left: 70px;
-  }
-  .timeline .timeline-item:nth-child(even) .timeline-content {
-    float: none;
-  }
-  .timeline .timeline-item:nth-child(odd) .timeline-content::after {
-    content: '';
-    position: absolute;
-    border-style: solid;
-    width: 0;
-    height: 0;
-    top: 30px;
-    left: -15px;
-    border-width: 10px 15px 10px 0;
-    border-color: transparent #f5f5f5 transparent transparent;
-  }
-  .timeline-item:nth-child(odd) .timeline-content .timeline-date {
-    right: auto;
-    left: 0;
-  }
 
-  .timeline-item:nth-child(odd) .timeline-content .timeline-img-header h5 {
-    left: auto;
-    right: 0;
-  }
+/* GALLERY */
+
+.gallery-section{
+  background: #ffff url("../images/gallery-background.jpg") center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 3vh;
+}
+
+.gallery-header h2{
+    color: #fc6d6d;
+    padding-top: 10vh;
+    padding-bottom: 1vh;
+}
+
+.gallery-row{
+  margin-left: 2vw;
+  margin-right: 2vw;
+
 }
 
 /* MEDIA QUERIES */
@@ -564,8 +550,8 @@ section {
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
  
   .navbar-expand-md .navbar-nav .nav-link { 
-    padding-left: 0.6rem; 
-    padding-right: 0.6rem; 
+    padding-left: 0.5rem; 
+    padding-right: 0.5rem; 
     font-size: 2vh;
   }
 
@@ -678,6 +664,44 @@ section {
     width: 40vw;
     height: 40vw;
     border-width: 3px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .timeline::before {
+    left: 50px;
+  }
+  .timeline .timeline-img {
+    left: 50px;
+  }
+  .timeline .timeline-content {
+    max-width: 100%;
+    width: auto;
+    margin-left: 70px;
+  }
+  .timeline .timeline-item:nth-child(even) .timeline-content {
+    float: none;
+  }
+  .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #f5f5f5 transparent transparent;
+  }
+  .timeline-item:nth-child(odd) .timeline-content .timeline-date {
+    right: auto;
+    left: 0;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content .timeline-img-header h5 {
+    left: auto;
+    right: 0;
   }
 }
 
