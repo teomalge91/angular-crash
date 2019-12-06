@@ -494,18 +494,26 @@ section {
 .timeline-img-header {
   height: 200px;
   position: relative;
-  margin-bottom: 20px;
 }
 
-.timeline-img-header h2 {
-  color: #FFFFFF;
+.timeline-img-header h5 {
+  color: #FFF;
   position: absolute;
-  bottom: 5px;
-  left: 20px;
+  bottom: 0;
+  left: 0;
+  background:#fc6d6d;
+  padding:5px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.timeline-item:nth-child(even) .timeline-content .timeline-img-header h5 {
+  left: auto;
+  right: 0;
 }
 
 .timeline-date {
-  background: #999;
+  background: #fc6d6d;
   display: inline-block;
   color: #FFFFFF;
   padding: 10px;
@@ -543,6 +551,11 @@ section {
   .timeline-item:nth-child(odd) .timeline-content .timeline-date {
     right: auto;
     left: 0;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content .timeline-img-header h5 {
+    left: auto;
+    right: 0;
   }
 }
 
