@@ -23,6 +23,12 @@ $(window).on("load", function (e) {
     $(".loader-container").fadeOut("slow");
 });
 
+//Click su link lo attiva
+$(".nav .nav-link").on("click", function(){
+    $(".nav").find(".active").removeClass("active");
+    $(this).addClass("active");
+ });
+
 $(document).ready(function () {
     // toggle "navbar-no-bg" class
     $('.top-content .text').waypoint(function () {
@@ -98,5 +104,3 @@ function openDirections(params) {
         '_blank' // <- This is what makes it open in a new window.
     );
 }
-  
-  

@@ -383,9 +383,7 @@ section {
 
 /* VIAGGIO */
 .trip-section{
-  background: #E8CBC0;
-  background: -webkit-linear-gradient(to right, #E8CBC0, #636FA4);
-  background: linear-gradient(to right, #E8CBC0, #636FA4);
+  background: #fc6d6d;
   padding-top: 7vh;
   min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   min-height: calc(var(--vh, 1vh) * 100);
@@ -395,15 +393,20 @@ section {
   color: #FFF;
 }
 
+
+.trip-header h3{
+  color: #FFF;
+}
+
+.trip-header p{
+  color: #FFF;
+}
+
 .text-gray {
   color: #999;
 }
 
 /* TIMELINE */
-
-.text-black{
-  color: #000;
-}
 
 .timeline {
   position: relative;
@@ -411,7 +414,7 @@ section {
 
 .timeline::before {
   content: '';
-  background: #3F51B5;
+  background: #FFF;
   width: 5px;
   height: 100%;
   position: absolute;
@@ -471,7 +474,7 @@ section {
 .timeline-img {
   width: 30px;
   height: 30px;
-  background: #3F51B5;
+  background: #444;
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -501,7 +504,7 @@ section {
   position: absolute;
   bottom: 0;
   left: 0;
-  background:#fc6d6d;
+  background:#444;
   padding:5px;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -513,9 +516,9 @@ section {
 }
 
 .timeline-date {
-  background: #fc6d6d;
+  background: #444;
   display: inline-block;
-  color: #FFFFFF;
+  color: #FFF;
   padding: 10px;
   position: absolute;
   top: 0;
@@ -526,7 +529,7 @@ section {
 /* GALLERY */
 
 .gallery-section{
-  background: #ffff url("../images/gallery-background.jpg") center;
+  background: #fc6d6d;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -534,7 +537,7 @@ section {
 }
 
 .gallery-header h2{
-    color: #fc6d6d;
+    color: #FFF;
     padding-top: 10vh;
     padding-bottom: 1vh;
 }
@@ -542,7 +545,6 @@ section {
 .gallery-row{
   margin-left: 2vw;
   margin-right: 2vw;
-
 }
 
 /* MEDIA QUERIES */

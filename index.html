@@ -21,7 +21,7 @@
     <div class="yin-yang"></div>
   </div>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg">
+  <nav id="navigator" class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="images/logo-bianco.png" width="40" height="40" alt="A M">
@@ -39,324 +39,300 @@
               data-target=".navbar-collapse.show">Quando &amp; Dove</a>
           </li>
           <li>
-            <a class="nav-link" href="#trip-section" data-toggle="collapse" data-target=".navbar-collapse.show">Il
-              Nostro
-              Viaggio</a>
+            <a class="nav-link" href="#trip-section" data-toggle="collapse" 
+              data-target=".navbar-collapse.show">Il Nostro Viaggio
+            </a>
           </li>
-          <li><a class="nav-link" href="#gallery-section" data-toggle="collapse" data-target=".navbar-collapse.show">Gallery</a></li>
+          <li>
+            <a class="nav-link" href="#gallery-section" data-toggle="collapse"
+              data-target=".navbar-collapse.show">Gallery
+            </a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- HOME -->
-  <section id="home-section" class="home-section" data-section="home">
-    <div class="container home-container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h1>Alessandra
-          </h1>
-          <h3>
-            <em>&amp;</em>
-          </h3>
-          <h1>Matteo
-          </h1>
+  <div data-spy="scroll" data-target="#navigator">
+    <!-- HOME -->
+    <section id="home-section" class="home-section" data-section="home">
+      <div class="container home-container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1>Alessandra
+            </h1>
+            <h3>
+              <em>&amp;</em>
+            </h3>
+            <h1>Matteo
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h4>20 Giugno 2020</h4>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h4>20 Giugno 2020</h4>
-        </div>
+      <div class="scrolldown-btn">
+        <a href="#countdown-section"><span></span>Scorri</a>
       </div>
-    </div>
-    <div class="scrolldown-btn">
-      <a href="#countdown-section"><span></span>Scorri</a>
-    </div>
-  </section>
+    </section>
 
-  <!-- COUNTDOWN -->
-  <section id="countdown-section" class="countdown-section">
-    <div class="container countdown-container" id="countdown">
-      <div class="row heading-row">
-        <div class="col text-center">
-          <h2>IL MATRIMONIO INIZIA TRA</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6 col-md-3 text-center d-flex justify-content-center">
-          <div class="circled rounded-circle" id="daysdiv">
-            <h2 id="days" class="countdown-time">0</h2>
-            <h3>GIORNI</h3>
+    <!-- COUNTDOWN -->
+    <section id="countdown-section" class="countdown-section">
+      <div class="container countdown-container" id="countdown">
+        <div class="row heading-row">
+          <div class="col text-center">
+            <h2>IL MATRIMONIO INIZIA TRA</h2>
           </div>
         </div>
-        <div class="col-6 col-md-3 text-center d-flex justify-content-center">
-          <div class="circled rounded-circle" id="hoursdiv">
-            <h2 id="hours" class="countdown-time">0</h2>
-            <h3>ORE</h3>
-          </div>
-        </div>
-        <div class="col-6 col-md-3 text-center d-flex justify-content-center">
-          <div class="circled rounded-circle" id="minutesdiv">
-            <h2 id="minutes" class="countdown-time">0</h2>
-            <h3>MINUTI</h3>
-          </div>
-        </div>
-        <div class="col-6 col-md-3 text-center d-flex justify-content-center">
-          <div class="circled rounded-circle" id="secondsdiv">
-            <h2 id="seconds" class="countdown-time">0</h2>
-            <h3>SECONDI</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- DOVE E QUANDO -->
-  <section id="when-where-section" class="when-where-section" data-section="when-where">
-    <div class="container">
-      <div class="where-header row mb40 text-center">
-        <div class="col-md-12">
-          <h2 class="mt0">QUANDO &amp; DOVE</h2>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-6 d-flex justify-content-center">
-          <div class="where-card card shadow text-center">
-            <img src="images/chiesa.png" class="card-img-top" alt="chiesa">
-            <div class="card-body">
-              <h5 class="card-title">CERIMONIA</h5>
-              <h6 class="card-subtitle">
-                20 Giugno 2020 ore 15.00
-              </h6>
-              <h5 class="card-text">
-                Parrocchia di Regoledo
-              </h5>
-              <p class="card-text">
-                Piazza S. Ambrogio - 23013 - Cosio Valtellino (SO)
-              </p>
-              <a href="javascript:void()" onclick="openChurchDirections();" class="btn btn-info btn-sm">INDICAZIONI</a>
+        <div class="row">
+          <div class="col-6 col-md-3 text-center d-flex justify-content-center">
+            <div class="circled rounded-circle" id="daysdiv">
+              <h2 id="days" class="countdown-time">0</h2>
+              <h3>GIORNI</h3>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 d-flex justify-content-center when-where-card">
-          <div class="card shadow text-center">
-            <img src="images/ristorante.jpg" class="card-img-top" alt="Sottovento">
-            <div class="card-body">
-              <h5 class="card-title">WEDDING PARTY</h5>
-              <h6 class="card-subtitle">
-                A seguire
-              </h6>
-              <h5 class="card-text">
-                Ristorante Sottovento
-              </h5>
-              <p class="card-text">
-                Via Imbarcadero 3 - 23827 - Lierna - (LC)
-              </p>
-              <a href="javascript:void()" onclick="openRestaurantDirections();"
-                class="btn btn-info btn-sm">INDICAZIONI</a>
+          <div class="col-6 col-md-3 text-center d-flex justify-content-center">
+            <div class="circled rounded-circle" id="hoursdiv">
+              <h2 id="hours" class="countdown-time">0</h2>
+              <h3>ORE</h3>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 text-center d-flex justify-content-center">
+            <div class="circled rounded-circle" id="minutesdiv">
+              <h2 id="minutes" class="countdown-time">0</h2>
+              <h3>MINUTI</h3>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 text-center d-flex justify-content-center">
+            <div class="circled rounded-circle" id="secondsdiv">
+              <h2 id="seconds" class="countdown-time">0</h2>
+              <h3>SECONDI</h3>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- VIAGGIO -->
-  <section id="trip-section" class="trip-section">
-    <div class="container py-5">
-      <div class="trip-header row mb40 text-center">
-        <div class="col-md-12">
-          <h2 class="mt0">IL NOSTRO VIAGGIO</h2>
+    <!-- DOVE E QUANDO -->
+    <section id="when-where-section" class="when-where-section" data-section="when-where">
+      <div class="container">
+        <div class="where-header row mb40 text-center">
+          <div class="col-md-12">
+            <h2 class="mt0">QUANDO &amp; DOVE</h2>
+          </div>
         </div>
-      </div>
-      <div class="container text-black">
-        <div class="col-lg-12 timeline-heading">
-          <h3 class="timeline-heading text-center">Giappone - Malesia</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
-          </p>
-        </div>
-      </div>
-      <div class="container timeline">
-        <div class="timeline-item">
-          <div class="timeline-img"></div>
-          <div class="timeline-content timeline-card">
-            <div class="timeline-img-header" style="background-image:url(images/Tokyo.jpg)">
-              <h5>Tokyo</h5>
+        <div class="row text-center">
+          <div class="col-md-6 d-flex justify-content-center">
+            <div class="where-card card shadow text-center">
+              <img src="images/chiesa.png" class="card-img-top" alt="chiesa">
+              <div class="card-body">
+                <h5 class="card-title">CERIMONIA</h5>
+                <h6 class="card-subtitle">
+                  20 Giugno 2020 ore 15.00
+                </h6>
+                <h5 class="card-text">
+                  Parrocchia di Regoledo
+                </h5>
+                <p class="card-text">
+                  Piazza S. Ambrogio - 23013 - Cosio Valtellino (SO)
+                </p>
+                <a href="javascript:void()" onclick="openChurchDirections();"
+                  class="btn btn-info btn-sm">INDICAZIONI</a>
+              </div>
             </div>
-            <div class="timeline-date">22 Giugno 2020</div>
-            <p class="text-black">Nel 1603 Edo, l'antica Tokyo, era un villaggio di pescatori arroccato intorno ad un
-              castello.
-              Nel XVIII sec. era già diventata la più grande città del mondo. Oggi, la Grande Tokyo conta oltre 35
-              milioni di abitanti.
+          </div>
+          <div class="col-md-6 d-flex justify-content-center when-where-card">
+            <div class="card shadow text-center">
+              <img src="images/ristorante.jpg" class="card-img-top" alt="Sottovento">
+              <div class="card-body">
+                <h5 class="card-title">WEDDING PARTY</h5>
+                <h6 class="card-subtitle">
+                  A seguire
+                </h6>
+                <h5 class="card-text">
+                  Ristorante Sottovento
+                </h5>
+                <p class="card-text">
+                  Via Imbarcadero 3 - 23827 - Lierna - (LC)
+                </p>
+                <a href="javascript:void()" onclick="openRestaurantDirections();"
+                  class="btn btn-info btn-sm">INDICAZIONI</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIAGGIO -->
+    <section id="trip-section" class="trip-section">
+      <div class="container py-5">
+        <div class="trip-header row mb40 text-center">
+          <div class="col-md-12">
+            <h2 class="mt0">IL NOSTRO VIAGGIO</h2>
+          </div>
+        </div>
+        <div class="container">
+          <div class="trip-header col-lg-12 timeline-heading">
+            <h3 class="timeline-heading text-center">Giappone - Malesia</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum.
             </p>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-img"></div>
-          <div class="timeline-content timeline-card">
-            <div class="timeline-img-header" style="background-image:url(images/Takayama.jpg)">
-              <h5>Takayama</h5>
+        <div class="container timeline">
+          <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div class="timeline-content timeline-card">
+              <div class="timeline-img-header" style="background-image:url(images/Tokyo.jpg)">
+                <h5>Tokyo</h5>
+              </div>
+              <div class="timeline-date">22 Giugno 2020</div>
             </div>
-            <div class="timeline-date">26 Giugno 2020</div>
-            <p class="text-black">Il nome Takayama (alta montagna) fa pensare a un luogo remoto, evocando la grande
-              città che fu;
-              Takayama si trova infatti sul versante occidentale delle Alpi Giapponesi, e fu la capitale dell’antica
-              provincia di Hida.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div class="timeline-content timeline-card">
+              <div class="timeline-img-header" style="background-image:url(images/Takayama.jpg)">
+                <h5>Takayama</h5>
+              </div>
+              <div class="timeline-date">26 Giugno 2020</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div class="timeline-content timeline-card">
+              <div class="timeline-img-header" style="background-image:url(images/Kanazawa.jpg)">
+                <h5>Kanazawa</h5>
+              </div>
+              <div class="timeline-date">27 Giugno 2020</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div class="timeline-content timeline-card">
+              <div class="timeline-img-header" style="background-image:url(images/Kyoto.jpg)">
+                <h5>Kyoto</h5>
+              </div>
+              <div class="timeline-date">28 Giugno 2020</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div class="timeline-content timeline-card">
+              <div class="timeline-img-header" style="background-image:url(images/Koyasan.jpg)">
+                <h5>Koyasan</h5>
+              </div>
+              <div class="timeline-date">1 Luglio 2020</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div class="timeline-content timeline-card">
+              <div class="timeline-img-header" style="background-image:url(images/Osaka.jpg)">
+                <h5>Osaka</h5>
+              </div>
+              <div class="timeline-date">2 Luglio 2020</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div class="timeline-content timeline-card">
+              <div class="timeline-img-header" style="background-image:url(images/Kuala-Lumpur.jpg)">
+                <h5>Kuala Lumpur</h5>
+              </div>
+              <div class="timeline-date">3 Luglio 2020</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div class="timeline-content timeline-card">
+              <div class="timeline-img-header" style="background-image:url(images/Redang.jpg)">
+                <h5>Redang</h5>
+              </div>
+              <div class="timeline-date">4 Luglio 2020</div>
+            </div>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-img"></div>
-          <div class="timeline-content timeline-card">
-            <div class="timeline-img-header" style="background-image:url(images/Kanazawa.jpg)">
-              <h5>Kanazawa</h5>
-            </div>
-            <div class="timeline-date">27 Giugno 2020</div>
-            <p class="text-black">La città è chiamata da molti la “piccola Kyoto” ed è facile essere d’accordo con
-              questa definizione:
-              uno dei giardini più belli del Giappone, musei e quartieri tradizionali di geisha e samurai sono solo
-              alcune delle cose visibili a Kanazawa.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-img"></div>
-          <div class="timeline-content timeline-card">
-            <div class="timeline-img-header" style="background-image:url(images/Kyoto.jpg)">
-              <h5>Kyoto</h5>
-            </div>
-            <div class="timeline-date">28 Giugno 2020</div>
-            <p class="text-black">Capitale del paese dal 794 al 1868, Kyoto è depositaria della storia della nazione,
-              ed è un vero e proprio scrigno dei tesori del Giappone: ci sono più templi e santuari a Kyoto che chiese a
-              Roma.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-img"></div>
-          <div class="timeline-content timeline-card">
-            <div class="timeline-img-header" style="background-image:url(images/Koyasan.jpg)">
-              <h5>Koyasan</h5>
-            </div>
-            <div class="timeline-date">1 Luglio 2020</div>
-            <p class="text-black">Koyasan, il monte Koya, si trova nella Penisola di Kii, all’interno della prefettura
-              di Wakayama.
-              È qui presente uno dei più antichi monasteri buddisti, risalente a 12 secoli fa ed è sede della setta che
-              pratica un tipo di Buddismo esoterico, il Buddismo Shingon.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-img"></div>
-          <div class="timeline-content timeline-card">
-            <div class="timeline-img-header" style="background-image:url(images/Osaka.jpg)">
-              <h5>Osaka</h5>
-            </div>
-            <div class="timeline-date">2 Luglio 2020</div>
-            <p class="text-black">Osaka è il capoluogo dell’omonima prefettura, situata nell’isola Honshu, la maggiore
-              del Giappone.
-              Originariamente chiamata Naniwa (“grande pendìo”, o “grande collina”), la città di Osaka è la terza città
-              del Giappone per numero di abitanti.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-img"></div>
-          <div class="timeline-content timeline-card">
-            <div class="timeline-img-header" style="background-image:url(images/Kuala-Lumpur.jpg)">
-              <h5>Kuala Lumpur</h5>
-            </div>
-            <div class="timeline-date">3 Luglio 2020</div>
-            <p class="text-black">Kuala Lumpur è la più grande città della Malaysia e la capitale della Federazione.
-              Il profilo moderno di questa metropoli è dominato dalle Torri Petronas, una coppia di grattacieli alti 451
-              m.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-img"></div>
-          <div class="timeline-content timeline-card">
-            <div class="timeline-img-header" style="background-image:url(images/Redang.jpg)">
-              <h5>Redang</h5>
-            </div>
-            <div class="timeline-date">4 Luglio 2020</div>
-            <p class="text-black">L’isola di Redang, che in lingua Malay si chiama Pulau Redang, si trova al largo della
-              costa orientale della Malesia;
-              è la più grande dell’arcipelago di nove isole del parco marino nello stato del Terengganu.</p>
-          </div>
-        </div>
-      </div>
-  </section>
+    </section>
 
+    <!-- GALLERY -->
+    <section id="gallery-section" class="gallery-section">
+      <div class="gallery-header text-center">
+        <h2>GALLERY</h2>
+      </div>
+      <div class="row text-center gallery-row">
+        <div class="col-lg-3 col-md-4 col-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aob0ukAYfuI/400x300" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EUfxH-pze7s/400x300" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/M185_qYH8vg/400x300" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/AvhMzHwiE_0/400x300" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/2gYsZUmockw/400x300" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EMSDtjVHdQ8/400x300" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/8mUEy0ABdNE/400x300" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/G9Rfc1qccH4/400x300" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aJeH0KcFkuc/400x300" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/p2TQ-3Bh3Oo/400x300" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
 
-
-  <!-- GALLERY -->
-  <section id="gallery-section" class="gallery-section">
-    <div class="gallery-header text-center">
-      <h2>GALLERY</h2>
-    </div>
-    <div class="row text-center gallery-row">
-      <div class="col-lg-3 col-md-4 col-6">
-        <a href="#" class="d-block mb-4 h-100">
-          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt="">
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-6">
-        <a href="#" class="d-block mb-4 h-100">
-          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aob0ukAYfuI/400x300" alt="">
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-6">
-        <a href="#" class="d-block mb-4 h-100">
-          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EUfxH-pze7s/400x300" alt="">
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-6">
-        <a href="#" class="d-block mb-4 h-100">
-          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/M185_qYH8vg/400x300" alt="">
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-6">
-        <a href="#" class="d-block mb-4 h-100">
-          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-6">
-        <a href="#" class="d-block mb-4 h-100">
-          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/AvhMzHwiE_0/400x300" alt="">
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-6">
-        <a href="#" class="d-block mb-4 h-100">
-          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/2gYsZUmockw/400x300" alt="">
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-6">
-        <a href="#" class="d-block mb-4 h-100">
-          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EMSDtjVHdQ8/400x300" alt="">
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-6">
-        <a href="#" class="d-block mb-4 h-100">
-          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/8mUEy0ABdNE/400x300" alt="">
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-6">
-        <a href="#" class="d-block mb-4 h-100">
-          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/G9Rfc1qccH4/400x300" alt="">
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-6">
-        <a href="#" class="d-block mb-4 h-100">
-          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aJeH0KcFkuc/400x300" alt="">
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-6">
-        <a href="#" class="d-block mb-4 h-100">
-          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/p2TQ-3Bh3Oo/400x300" alt="">
-        </a>
-      </div>
-    </div>
-  </section>
+  </div>
 
   <!-- FOOTER -->
   <footer class="footer">
