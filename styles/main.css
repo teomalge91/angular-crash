@@ -229,9 +229,11 @@ section {
   background: #ffff url("../images/home-background.jpg") center;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   position: relative;
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
+
 }
 
 .home-section h1{
