@@ -43,6 +43,12 @@ section {
   -webkit-animation: rotate 10s linear infinite;
           animation: rotate 10s linear infinite;
 }
+
+.loader-text{
+  font-size: 30px;
+  font-family: 'Forum', cursive;
+  color: #fff;
+}
 @-webkit-keyframes rotate {
   0% {
     -webkit-transform: rotate(0);
@@ -392,17 +398,15 @@ section {
   min-height: calc(var(--vh, 1vh) * 100);
 }
 
-
 .trip-header h2{
   color: #FFF;
 }
-
 
 .trip-header h3{
   color: #FFF;
 }
 
-.trip-header p{
+.trip-header h6{
   color: #FFF;
 }
 
@@ -715,6 +719,11 @@ section {
   .timeline-item:nth-child(odd) .timeline-content .timeline-img-header h5 {
     left: auto;
     right: 0;
+  }
+
+  @media screen and (max-width: 320px) {
+  .trip-header h6{
+    font-size: 3vh;
   }
 }
 
