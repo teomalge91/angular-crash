@@ -226,7 +226,7 @@ section {
 }
 
 .home-section{
-  background: #ffff url("../images/home-background.jpg") center;
+  background: #ffff url("../images/home-background-min.png") center;
   background-size: cover;
   background-position: center;
   position: relative;
