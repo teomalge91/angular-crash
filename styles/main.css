@@ -5,7 +5,7 @@ html {
 
 body {
   position: relative;
-  background: #2E2E2E;
+  background: #fc6d6d;
   color: #8b8e94;
   line-height: 1.7;
   font-size: 18px;
@@ -332,7 +332,7 @@ section {
   background-size: cover;
   background-position: center;
   position: relative;
-  height: auto;
+  min-height: auto;
   overflow: hidden;
 }
 
@@ -374,8 +374,7 @@ section {
 .when-where-section {
   background: #fc6d6d center;
   padding-top: 15vh;
-  min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-  min-height: calc(var(--vh, 1vh) * 100);
+  min-height: auto;
 }
 
 .where-header {
@@ -610,6 +609,17 @@ section {
   .countdown-time {
     font-size: 5vw;
   }
+
+  .when-where-section {
+    margin-top: 3vh;
+    padding-top: 9vh;
+    
+  }
+
+  .trip-section {
+    margin-top: 3vh;
+    padding-top: 9vh;
+  }
 }
 
 @media (max-width: 767px) and (orientation: portrait) {
@@ -699,7 +709,6 @@ section {
   }
 }
 
-
 @media screen and (max-width: 768px) {
   .timeline::before {
     left: 50px;
@@ -742,7 +751,14 @@ section {
   }
 }
 
-  @media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) {
+  
+  .when-where-section {
+    margin-top: 1vh;
+    padding-top: 15vh;
+  }
+  
+  
   .trip-header h6{
     font-size: 3vh;
   }
