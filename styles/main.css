@@ -20,7 +20,7 @@ section {
 
 /* LOADER */
 
-.loader-container{
+.loader-container {
   width: 100%;
   height: 1000vh;
   position: absolute;
@@ -44,7 +44,7 @@ section {
           animation: rotate 10s linear infinite;
 }
 
-.loader-text{
+.loader-text {
   font-size: 30px;
   font-family: 'Forum', cursive;
   color: #fff;
@@ -60,6 +60,7 @@ section {
             transform: rotate(360deg);
   }
 }
+
 @keyframes rotate {
   0% {
     -webkit-transform: rotate(0);
@@ -70,6 +71,7 @@ section {
             transform: rotate(360deg);
   }
 }
+
 .yin-yang:before,
 .yin-yang:after {
   content: '';
