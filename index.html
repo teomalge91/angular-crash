@@ -2,29 +2,370 @@
 <html lang="en">
 
 <head>
-  <title>Teo e Ale</title>
+  <title>Alessandra & Matteo</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Matrimonio Alessandra e Matteo">
+  <meta name="keywords" content="wedding, bride, groom">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <script src="https://kit.fontawesome.com/3a44d4acb3.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Forum&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="cover">
-    <a>Coming soon</a>
+  <div class="loader-container">
+    <div class="yin-yang"></div>
+    <p class="text-uppercase text-center loader-text pt-5">caricamento</p>
   </div>
+  <!-- NAVBAR -->
+  <nav id="navigator" class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo-bianco.png" width="40" height="40" alt="A M">
+      </a>
+      <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#main-navigation">
+        <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
+      </button>
+      <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="nav navbar-nav ml-auto text-center">
+          <li>
+            <a class="nav-link" href="#home-section" data-toggle="collapse" data-target=".navbar-collapse.show">Home</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#when-where-section" data-toggle="collapse"
+              data-target=".navbar-collapse.show">Quando &amp; Dove</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#trip-section" data-toggle="collapse" data-target=".navbar-collapse.show">Il
+              Nostro Viaggio
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" href="#gallery-section" data-toggle="collapse"
+              data-target=".navbar-collapse.show">Foto
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- HOME -->
+  <section id="home-section" class="home-section" data-section="home">
+    <div class="container home-container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>Alessandra
+          </h1>
+          <h3>
+            <em>&amp;</em>
+          </h3>
+          <h1>Matteo
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h4>20 Giugno 2020</h4>
+        </div>
+      </div>
+    </div>
+    <div class="scrolldown-btn">
+      <a href="#countdown-section"><span></span>Scorri</a>
+    </div>
+  </section>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+  <!-- COUNTDOWN -->
+  <section id="countdown-section" class="countdown-section">
+    <div class="container countdown-container" id="countdown">
+      <div class="row heading-row">
+        <div class="col text-center">
+          <h2>IL MATRIMONIO INIZIA TRA</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 col-md-3 text-center d-flex justify-content-center">
+          <div class="circled rounded-circle" id="daysdiv">
+            <h2 id="days" class="countdown-time">0</h2>
+            <h3>GIORNI</h3>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 text-center d-flex justify-content-center">
+          <div class="circled rounded-circle" id="hoursdiv">
+            <h2 id="hours" class="countdown-time">0</h2>
+            <h3>ORE</h3>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 text-center d-flex justify-content-center">
+          <div class="circled rounded-circle" id="minutesdiv">
+            <h2 id="minutes" class="countdown-time">0</h2>
+            <h3>MINUTI</h3>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 text-center d-flex justify-content-center">
+          <div class="circled rounded-circle" id="secondsdiv">
+            <h2 id="seconds" class="countdown-time">0</h2>
+            <h3>SECONDI</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOVE E QUANDO -->
+  <section id="when-where-section" class="when-where-section" data-section="when-where">
+    <div class="container">
+      <div class="where-header row mb40 text-center">
+        <div class="col-md-12">
+          <h2 class="mt0">QUANDO &amp; DOVE</h2>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-6 d-flex justify-content-center">
+          <div class="where-card card shadow text-center">
+            <img src="images/chiesa.png" class="card-img-top" alt="chiesa">
+            <div class="card-body">
+              <h5 class="card-title">CERIMONIA</h5>
+              <h6 class="card-subtitle">
+                20 Giugno 2020 ore 15.00
+              </h6>
+              <h5 class="card-text">
+                Parrocchia di Regoledo
+              </h5>
+              <p class="card-text">
+                Piazza S. Ambrogio - 23013 - Cosio Valtellino (SO)
+              </p>
+              <a href="javascript:void()" onclick="openChurchDirections();" class="btn btn-info btn-sm">INDICAZIONI</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center when-where-card">
+          <div class="card shadow text-center">
+            <img src="images/ristorante.jpg" class="card-img-top" alt="Sottovento">
+            <div class="card-body">
+              <h5 class="card-title">WEDDING PARTY</h5>
+              <h6 class="card-subtitle">
+                A seguire
+              </h6>
+              <h5 class="card-text">
+                Ristorante Sottovento
+              </h5>
+              <p class="card-text">
+                Via Imbarcadero 3 - 23827 - Lierna - (LC)
+              </p>
+              <a href="javascript:void()" onclick="openRestaurantDirections();"
+                class="btn btn-info btn-sm">INDICAZIONI</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIAGGIO -->
+  <section id="trip-section" class="trip-section">
+    <div class="container py-1">
+      <div class="trip-header row mb40 text-center">
+        <div class="col-md-12">
+          <h2 class="mt0">IL NOSTRO VIAGGIO</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="trip-header col-lg-12 text-center pb-4">
+          <h3 class="text-center">Giappone - Malesia</h3>
+          <h6>
+            Se vuoi contribuire alla realizzazione del nostro sogno, puoi farlo presso: <br />
+          </h6>
+          <h6 class="text-uppercase">
+            Agenzia viaggi Zugnoni & Company, Via Vanoni 31, 23017 Morbegno (SO)<br />
+            Tel. 0342615511 - Cel. 3666339305<br />
+            <a href = "mailto: agenziazugnoni@gmail.com">agenziazugnoni@gmail.com</a>
+          </h6>
+        </div>
+      </div>
+      <div class="container timeline">
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+          <div class="timeline-content timeline-card">
+            <div class="timeline-img-header" style="background-image:url(images/Tokyo.jpg)">
+              <h5>Tokyo</h5>
+            </div>
+            <div class="timeline-date">22 Giugno 2020</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+          <div class="timeline-content timeline-card">
+            <div class="timeline-img-header" style="background-image:url(images/Takayama.jpg)">
+              <h5>Takayama</h5>
+            </div>
+            <div class="timeline-date">26 Giugno 2020</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+          <div class="timeline-content timeline-card">
+            <div class="timeline-img-header" style="background-image:url(images/Kanazawa.jpg)">
+              <h5>Kanazawa</h5>
+            </div>
+            <div class="timeline-date">27 Giugno 2020</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+          <div class="timeline-content timeline-card">
+            <div class="timeline-img-header" style="background-image:url(images/Kyoto.jpg)">
+              <h5>Kyoto</h5>
+            </div>
+            <div class="timeline-date">28 Giugno 2020</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+          <div class="timeline-content timeline-card">
+            <div class="timeline-img-header" style="background-image:url(images/Koyasan.jpg)">
+              <h5>Koyasan</h5>
+            </div>
+            <div class="timeline-date">1 Luglio 2020</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+          <div class="timeline-content timeline-card">
+            <div class="timeline-img-header" style="background-image:url(images/Osaka.jpg)">
+              <h5>Osaka</h5>
+            </div>
+            <div class="timeline-date">2 Luglio 2020</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+          <div class="timeline-content timeline-card">
+            <div class="timeline-img-header" style="background-image:url(images/Kuala-Lumpur.jpg)">
+              <h5>Kuala Lumpur</h5>
+            </div>
+            <div class="timeline-date">3 Luglio 2020</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+          <div class="timeline-content timeline-card">
+            <div class="timeline-img-header" style="background-image:url(images/Redang.jpg)">
+              <h5>Redang</h5>
+            </div>
+            <div class="timeline-date">4 Luglio 2020</div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery-section" class="gallery-section">
+    <div class="gallery-header text-center">
+      <h2>FOTO</h2>
+    </div>
+    <div class="row text-center gallery-row">
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt="">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aob0ukAYfuI/400x300" alt="">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EUfxH-pze7s/400x300" alt="">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/M185_qYH8vg/400x300" alt="">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/AvhMzHwiE_0/400x300" alt="">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/2gYsZUmockw/400x300" alt="">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EMSDtjVHdQ8/400x300" alt="">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/8mUEy0ABdNE/400x300" alt="">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/G9Rfc1qccH4/400x300" alt="">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aJeH0KcFkuc/400x300" alt="">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/p2TQ-3Bh3Oo/400x300" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="page-footer font-small">
+    <div class="container-fluid footer-contacts py-2">
+      <div class="row text-center">
+        <div class="col-md-6 col-sm-12">
+          <h5 class="text-uppercase font-weight-bold">Alessandra Mottarella</h5>
+          <p>3463174457 <br />
+            <a href = "mailto: ale.motta@live.it">ale.motta@live.it</a>
+          </p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h5 class="text-uppercase font-weight-bold">Matteo Malgesini</h5>
+          <p>3492216519 <br />
+            <a href = "mailto: teomalge@hotmail.it">teomalge@hotmail.it</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center">Copyright 2020 Matteo Malgesini ©
+    </div>
+  </footer>
+  <!-- Footer -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
   <script src="scripts/main.js"></script>
+
 </body>
 
 </html>
