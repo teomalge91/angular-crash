@@ -565,11 +565,32 @@ section {
 }
 
 /* FOOTER */
+
 .footer-contacts {
   background-color: #2E2E2E;
+  background:
+  /* top, transparent black, faked with gradient */ 
+  linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.6)
+  ),
+  /* bottom, image */ url("../images/coppia-jappo.png") center no-repeat;
+  background-size: cover;
+  height: 40vh;
+  width: 100vw;
+  margin-bottom: 0;
 }
+
+.text-footer{
+  color: white;
+}
+.link {
+  text-decoration: underline;
+}
+
 .footer-copyright {
   background-color: #212121;
+  height: auto;
 }
 
 /* MEDIA QUERIES */
