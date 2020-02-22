@@ -334,16 +334,17 @@ section {
   position: relative;
   min-height: auto;
   overflow: hidden;
+  padding-top: 3vh;
 }
 
 .countdown-container {
-  margin-top: 13vh;
-  margin-bottom: 4vh;
+  margin-top: 9vh;
+  margin-bottom: 1vh;
 }
 
 .circled {
-  width: 7.3rem;
-  height: 7.3rem;
+  width: 6rem;
+  height: 6rem;
   border-color: #fff;
   border-style: solid;
   border-width: 4px;
@@ -351,29 +352,30 @@ section {
   margin-top: 0.5vh;
 }
 
-.heading-row {
-  margin-bottom: 2vh;
-}
-
 .countdown-section h2 {
   color: #fff;
 }
 .countdown-section h3 {
   color: #fff;
-  font-size: 3.5vh;
+  font-size: 2.5vh;
 }
 
 .countdown-time {
   font-weight: 900;
   font-family: 'Forum', cursive;
-  font-size: 5vh;
+  font-size: 4vh;
   margin-top: 15%;
+}
+
+.section-header {
+  font-family: 'Mr Dafoe', cursive;
+  font-size: 12vh;
 }
 
 /* WHEN & WHERE */
 .when-where-section {
   background: #fc6d6d center;
-  padding-top: 15vh;
+  padding-top: 10vh;
   min-height: auto;
 }
 
@@ -681,13 +683,13 @@ section {
     font-size: 22vw;
   }
 
-  .home-section h3 {
+  /* .home-section h3 {
     font-size: 10vw;
   }
 
   .home-section h4 {
     font-size: 7vw;
-  }
+  } */
 }
 
 @media (max-width: 375px) and (orientation: portrait) {
@@ -697,6 +699,10 @@ section {
   }
 
   .when-where-section {
+    padding-top: 15vh;
+  }
+
+  .trip-section {
     padding-top: 15vh;
   }
   
@@ -711,27 +717,6 @@ section {
 
   .card img {
     height: 35vh;
-  }
-}
-
-@media (max-width: 338px) and (orientation: portrait) {
-
-  .navbar-expand-md .navbar-nav .nav-link { 
-    font-size: 4vh;
-  }
-
-  .countdown-container {
-    margin-top: 15vh;
-  }
-
-  .when-where-section {
-    margin-top: 20vh;
-  }
-
-  .circled {
-    width: 35vw;
-    height: 35vw;
-    border-width: 3px;
   }
 }
 
@@ -779,11 +764,9 @@ section {
 
 @media screen and (max-width: 320px) {
   
-  .when-where-section {
-    margin-top: 1vh;
-    padding-top: 15vh;
+  .countdown-section {
+    padding-top: 6vh;
   }
-  
   
   .trip-header h5{
     font-size: 3vh;
