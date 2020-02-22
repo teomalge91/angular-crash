@@ -372,6 +372,54 @@ section {
   font-size: 12vh;
 }
 
+.rsvp
+{
+  background-color: #fc6d6d;
+  border-color: #fc6d6d;
+  color: #fff;
+}
+.rsvp:hover
+{
+  background-color: #df5252;
+  border-color: #df5252;
+  color: #fff;
+}
+
+.rsvp:focus,
+.rsvp:active,
+.rsvp.aria-pressed
+{
+  background-color: #df5252;
+  border-color: #df5252;
+  box-shadow: none;
+  color: #fff;
+}
+
+.rsvp-body
+{
+  background-color: #444;
+  border-color: #444;
+  color: #fff;
+}
+.rsvp:hover
+{
+  background-color: #444;
+  border-color: #444;
+  color: #fff;
+}
+
+.rsvp:focus,
+.rsvp:active,
+.rsvp.aria-pressed
+{
+  background-color: #444;
+  border-color: #444;
+  color: #fff;
+  box-shadow: none;
+
+}
+
+
 /* WHEN & WHERE */
 .when-where-section {
   background: #fc6d6d center;
