@@ -481,6 +481,14 @@ section {
   color: #FFF;
 }
 
+.trip-div{
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+  border: 2px solid white;
+  padding: 2vh;
+  border-radius: 4px;
+}
+
 .trip-header h4 {
   color: #FFF;
 }
@@ -676,7 +684,7 @@ section {
   .navbar-expand-md .navbar-nav .nav-link { 
     padding-left: 0.5rem; 
     padding-right: 0.5rem; 
-    font-size: 2vh;
+    font-size: 1.5vh;
   }
 
   .card {
@@ -704,7 +712,12 @@ section {
   }
   
   .countdown-time {
-    font-size: 5vw;
+    font-size: 3vw;
+  }
+
+  .circled {
+    width: 8rem;
+    height: 8rem;
   }
 
   .when-where-section {
@@ -717,6 +730,12 @@ section {
     margin-top: 3vh;
     padding-top: 9vh;
   }
+
+  .rsvp{
+    padding: 0.5vh;
+    font-size: 1.5vh;
+  }
+
 }
 
 @media (max-width: 767px) and (orientation: portrait) {
@@ -751,14 +770,6 @@ section {
   .home-section h1 {
     font-size: 22vw;
   }
-
-  /* .home-section h3 {
-    font-size: 10vw;
-  }
-
-  .home-section h4 {
-    font-size: 7vw;
-  } */
 }
 
 @media (max-width: 375px) and (orientation: portrait) {
@@ -773,6 +784,10 @@ section {
 
   .trip-section {
     padding-top: 15vh;
+  }
+
+  .trip-header h5 {
+    font-size: 5.5vw;
   }
   
   .where-header {
