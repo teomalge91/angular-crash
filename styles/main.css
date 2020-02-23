@@ -372,55 +372,16 @@ section {
   font-size: 12vh;
 }
 
-.rsvp
-{
-  background-color: #fc6d6d;
-  border-color: #fc6d6d;
-  color: #fff;
-}
-.rsvp:hover
-{
-  background-color: #df5252;
-  border-color: #df5252;
-  color: #fff;
-}
-
-.rsvp:focus,
-.rsvp:active,
-.rsvp.aria-pressed
-{
-  background-color: #df5252;
-  border-color: #df5252;
-  box-shadow: none;
-  color: #fff;
-}
-
-.rsvp-body
-{
-  background-color: #444;
-  border-color: #444;
-  color: #fff;
-}
-.rsvp:hover
-{
-  background-color: #444;
-  border-color: #444;
-  color: #fff;
-}
-
-.rsvp:focus,
-.rsvp:active,
-.rsvp.aria-pressed
-{
-  background-color: #444;
-  border-color: #444;
-  color: #fff;
-  box-shadow: none;
-
-}
-
-
 /* WHEN & WHERE */
+
+.aperitivo-div {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  border: 2px solid white;
+  padding: 1.5vh;
+  border-radius: 5%;
+}
+
 .when-where-section {
   background: #fc6d6d center;
   padding-top: 10vh;
@@ -437,7 +398,11 @@ section {
 }
 
 .card img {
-  height: 45vh;
+  height: 35vh;
+}
+
+.card-text {
+  color: #444;
 }
 
 .where-header h2 {
@@ -445,6 +410,62 @@ section {
 }
 
 .where-header h5 {
+  color: #FFF;
+}
+
+/* RSVP */
+
+.rsvp {
+  background-color: #fc6d6d;
+  border-color: #fc6d6d;
+  color: #fff;
+}
+
+.rsvp:hover {
+  background-color: #df5252;
+  border-color: #df5252;
+  color: #fff;
+}
+
+.rsvp:focus,
+.rsvp:active,
+.rsvp.aria-pressed {
+  background-color: #df5252;
+  border-color: #df5252;
+  box-shadow: none;
+  color: #fff;
+}
+
+.rsvp-body {
+  background-color: #444;
+  border-color: #444;
+  color: #fff;
+  margin-top: 2vh;
+}
+
+.rsvp-body:hover {
+  background-color: rgb(49, 48, 48);
+  border-color: rgb(49, 48, 48);
+  color: #fff;
+}
+
+.rsvp-body:focus,
+.rsvp-body:active,
+.rsvp-body.aria-pressed {
+  background-color: rgb(49, 48, 48);
+  border-color: rgb(49, 48, 48);
+  color: #fff;
+  box-shadow: none;
+}
+
+.rsvp-div {
+  margin-top: 2vh;
+  border: 2px solid white;
+  padding: 3vh;
+  border-radius: 5%;
+}
+
+.rsvp-div h5 {
   color: #FFF;
 }
 
