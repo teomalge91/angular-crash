@@ -379,7 +379,6 @@ section {
   margin-bottom: 2vh;
   border: 2px solid white;
   padding: 1.5vh;
-  border-radius: 4px;
 }
 
 .when-where-section {
@@ -462,7 +461,6 @@ section {
   margin-top: 2vh;
   border: 2px solid white;
   padding: 3vh;
-  border-radius: 4px;
 }
 
 .rsvp-div h5 {
@@ -486,7 +484,6 @@ section {
   margin-bottom: 2.5vh;
   border: 2px solid white;
   padding: 2vh;
-  border-radius: 4px;
 }
 
 .trip-header h4 {
@@ -554,7 +551,6 @@ section {
   position: relative;
   width: 45%;
   padding: 10px 30px;
-  border-radius: 4px;
   background: #f5f5f5;
   box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
 }
