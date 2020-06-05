@@ -44,7 +44,7 @@ $(document).ready(function () {
 });
 
 //funzione per il countdown
-var weddingday = new Date(2020, 05, 20, 15, 00);
+var weddingday = new Date(2021, 04, 22, 15, 00); //il mese parte da 0 quindi maggio è il 04
 var timing = setInterval(
     function () {
         var currentDate = new Date().getTime();

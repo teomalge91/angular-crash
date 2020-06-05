@@ -47,7 +47,6 @@ section {
 .loader-text {
   font-size: 30px;
   font-family: 'Forum', cursive;
-  color: #fff;
 }
 
 @-webkit-keyframes rotate {
@@ -111,7 +110,7 @@ section {
 
 .navbar.navbar-no-bg {
   background: #444;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .navbar-dark .navbar-nav {
@@ -121,7 +120,6 @@ section {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #fff;
   color: rgba(255, 255, 255, 0.8);
   border: 0;
 }
@@ -248,19 +246,16 @@ section {
 .home-section h1{
   font-size: 20vh;
   font-family: 'Mr Dafoe', cursive;
-  color: #fff;
 }
 
 .home-section h3{
   font-size: 10vh;
   font-family: 'Mr Dafoe', cursive;
-  color: #fff;
 }
 
 .home-section h4{
   font-size: 5vh;
   font-family: 'Forum', cursive;
-  color: #fff;
 }
 
 /* SCROLL BUTTON  */
@@ -268,7 +263,6 @@ section {
 .scrolldown-btn a {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  color: #fff;
   font-family: 'Forum', cursive;
   font : normal 18px/1 'Forum', cursive;
   letter-spacing: .001em;
@@ -352,11 +346,7 @@ section {
   margin-top: 0.5vh;
 }
 
-.countdown-section h2 {
-  color: #fff;
-}
 .countdown-section h3 {
-  color: #fff;
   font-size: 2.5vh;
 }
 
@@ -404,20 +394,11 @@ section {
   color: #444;
 }
 
-.where-header h2 {
-  color: #FFF;
-}
-
-.where-header h5 {
-  color: #FFF;
-}
-
 /* RSVP */
 
 .rsvp {
   background-color: #fc6d6d;
   border-color: #fc6d6d;
-  color: #fff;
 }
 
 .rsvp:hover {
@@ -438,7 +419,6 @@ section {
 .rsvp-body {
   background-color: #444;
   border-color: #444;
-  color: #fff;
   margin-top: 2vh;
 }
 
@@ -463,10 +443,6 @@ section {
   padding: 3vh;
 }
 
-.rsvp-div h5 {
-  color: #FFF;
-}
-
 /* VIAGGIO */
 .trip-section {
   background: #fc6d6d;
@@ -475,23 +451,12 @@ section {
   min-height: calc(var(--vh, 1vh) * 100);
 }
 
-.trip-header h2 {
-  color: #FFF;
-}
 
 .trip-div{
   margin-top: 2.5vh;
   margin-bottom: 2.5vh;
   border: 2px solid white;
   padding: 2vh;
-}
-
-.trip-header h4 {
-  color: #FFF;
-}
-
-.trip-header h5 {
-  color: #FFF;
 }
 
 .text-gray {
@@ -597,7 +562,6 @@ section {
 }
 
 .timeline-img-header h5 {
-  color: #FFF;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -615,7 +579,6 @@ section {
 .timeline-date {
   background: #444;
   display: inline-block;
-  color: #FFF;
   padding: 10px;
   position: absolute;
   top: 0;
@@ -633,7 +596,6 @@ section {
 }
 
 .gallery-header h2 {
-    color: #FFF;
     padding-top: 10vh;
     padding-bottom: 1vh;
 }
@@ -660,12 +622,12 @@ section {
   margin-bottom: 0;
 }
 
-.text-footer{
-  color: white;
-}
 .link {
-  text-decoration: underline;
   font-family: 'Forum', cursive !important;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 .footer-copyright {
@@ -720,7 +682,6 @@ section {
   .when-where-section {
     margin-top: 3vh;
     padding-top: 9vh;
-    
   }
 
   .trip-section {
@@ -767,6 +728,10 @@ section {
   .home-section h1 {
     font-size: 22vw;
   }
+
+  .rsvp{
+    font-size: 4vh;
+  }
 }
 
 @media (max-width: 375px) and (orientation: portrait) {
@@ -798,6 +763,10 @@ section {
 
   .card img {
     height: 35vh;
+  }
+
+  .rsvp{
+    font-size: 4vh;
   }
 }
 
