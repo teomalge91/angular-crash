@@ -325,25 +325,20 @@ section {
   background-size: cover;
   background-position: center;
   position: relative;
-  min-height: auto;
   overflow: hidden;
-  padding-top: 3vh;
-}
-
-.countdown-container {
-  margin-top: 9vh;
-  margin-bottom: 1vh;
-}
-
-.countdown-section h3 {
-  font-size: 2.5vh;
+  padding-top: 9vh;
+  padding-bottom: 4vh;
+  min-height: auto;
 }
 
 .countdown-time {
-  font-weight: 900;
   font-family: 'Forum', cursive;
   font-size: 4vh;
-  margin-top: 15%;
+}
+
+.countdown-desc {
+  font-family: 'Forum', cursive;
+  font-size: 2vh;
 }
 
 .section-header {
@@ -656,14 +651,6 @@ section {
     font-size: 7vw;
   }
 
-  .countdown-section h3 {
-    font-size: 3vw;
-  }
-  
-  .countdown-time {
-    font-size: 4vh;
-  }
-
   .when-where-section {
     margin-top: 3vh;
     padding-top: 9vh;
@@ -799,13 +786,9 @@ section {
 
 @media screen and (max-width: 320px) {
   
-  .countdown-section {
-    padding-top: 6vh;
-  }
-  
   .trip-header h5{
     font-size: 3vh;
   }
 }
 
-/* .row > div { min-height:100px; border:1px solid red;}  */
+ .row > div {border:1px solid red;} 
