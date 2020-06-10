@@ -8,11 +8,12 @@
   <meta name="description" content="Matrimonio Alessandra e Matteo">
   <meta name="keywords" content="wedding, bride, groom">
   <meta name="robots" content="noindex" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
   <link href="https://fonts.googleapis.com/css?family=Forum&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="aos/aos.css" />
   <script src="https://kit.fontawesome.com/3a44d4acb3.js" crossorigin="anonymous"></script>
 </head>
 
@@ -24,7 +25,7 @@
   </div>
 
   <!-- NAVBAR -->
-  <nav id="navigator" class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg">
+  <nav id="navigator" class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg text-uppercase">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="images/logo-bianco.png" width="40" height="40" alt="A M">
@@ -35,14 +36,16 @@
       <div class="collapse navbar-collapse" id="main-navigation">
         <ul class="nav navbar-nav ml-auto text-center">
           <li>
-            <a class="nav-link text-white" href="#home-section" data-toggle="collapse" data-target=".navbar-collapse.show">Home</a>
+            <a class="nav-link text-white" href="#home-section" data-toggle="collapse"
+              data-target=".navbar-collapse.show">Home</a>
           </li>
           <li>
             <a class="nav-link text-white" href="#when-where-section" data-toggle="collapse"
               data-target=".navbar-collapse.show">Quando E Dove</a>
           </li>
           <li>
-            <a class="nav-link text-white" href="#trip-section" data-toggle="collapse" data-target=".navbar-collapse.show">Il
+            <a class="nav-link text-white" href="#trip-section" data-toggle="collapse"
+              data-target=".navbar-collapse.show">Il
               Nostro Viaggio
             </a>
           </li>
@@ -51,8 +54,8 @@
               data-target=".navbar-collapse.show">Foto
             </a>
           </li> -->
-          <button type="button" class="btn btn-default text-white rsvp"
-            onclick="window.open('http://teoeale.rsvpify.com');">CONFERMA</button>
+          <button type="button" class="btn btn-default text-white text-uppercase rsvp my-rounded-pill"
+            onclick="window.open('http://teoeale.rsvpify.com');">Conferma</button>
         </ul>
       </div>
     </div>
@@ -88,30 +91,30 @@
     <div class="container text-white text-center countdown-container" id="countdown">
       <div class="row mx-auto font-weight-bold h-20">
         <div class="col-3">
-            <span id="days" class="countdown-time">0</span>
+          <span id="days" class="countdown-time">0</span>
         </div>
         <div class="col-3">
-            <span id="hours" class="countdown-time">0</span>
+          <span id="hours" class="countdown-time">0</span>
         </div>
         <div class="col-3">
-            <span id="minutes" class="countdown-time">0</span>
+          <span id="minutes" class="countdown-time">0</span>
         </div>
         <div class="col-3">
-            <span id="seconds" class="countdown-time">0</span>
+          <span id="seconds" class="countdown-time">0</span>
         </div>
       </div>
       <div class="row mx-auto h-70">
         <div class="col-3">
-            <span class="countdown-desc">GIORNI</span>
+          <span class="countdown-desc">GIORNI</span>
         </div>
         <div class="col-3">
-            <pspan class="countdown-desc">ORE</span>
+          <span class="countdown-desc">ORE</span>
         </div>
         <div class="col-3">
-            <span class="countdown-desc">MINUTI</span>
+          <span class="countdown-desc">MINUTI</span>
         </div>
         <div class="col-3">
-            <span class="countdown-desc">SECONDI</span>
+          <span class="countdown-desc">SECONDI</span>
         </div>
       </div>
     </div>
@@ -125,16 +128,17 @@
       <div class="where-header row mb40 text-center">
         <div class="col-md-12">
           <h2 class="mt0 text-white section-header">Quando e dove</h2>
-          <div class="aperitivo-div rounded-lg">
-            <h5 class="text-white" >Prima della cerimonia attendiamo gli invitati nelle case dei genitori degli sposi per un breve rinfresco.
-            </h5>
-          </div>
+          <!-- <div class="intro-div my-rounded">
+            <p class="text-white intro">Prima della cerimonia attendiamo gli invitati nelle case dei genitori degli sposi per
+              un breve rinfresco.
+            </p>
+          </div> -->
         </div>
       </div>
       <div class="row text-center">
         <div class="col-md-6 d-flex justify-content-center">
-          <div class="where-card card shadow text-center">
-            <img src="images/chiesa.png" class="card-img-top" alt="chiesa">
+          <div class="where-card card shadow text-center my-rounded" data-aos="fade-up">
+            <img src="images/chiesa.png" class="card-img-top my-rounded" alt="chiesa">
             <div class="card-body">
               <h5 class="card-title card-text">CERIMONIA</h5>
               <h6 class="card-subtitle card-text">
@@ -146,14 +150,17 @@
               <p class="card-text">
                 Piazza S. Ambrogio - 23013 - Cosio Valtellino (SO)
               </p>
-              <a href="javascript:void()" onclick="openChurchDirections();" class="btn btn-info btn-sm">INDICAZIONI <i
-                  class="fas fa-route"></i></a>
+              <!-- <p class="card-text">Prima della cerimonia attendiamo gli invitati nelle case dei genitori degli sposi per
+                un breve rinfresco.
+              </p> -->
+              <button type="button" class="btn btn-default text-white rsvp-body my-rounded-pill text-uppercase"
+                onclick="openChurchDirections();">Indicazioni</button>
             </div>
           </div>
         </div>
         <div class="col-md-6 d-flex justify-content-center when-where-card">
-          <div class="card shadow text-center">
-            <img src="images/ristorante.jpg" class="card-img-top" alt="Sottovento">
+          <div class="card shadow text-center my-rounded" data-aos="fade-up">
+            <img src="images/ristorante.jpg" class="card-img-top my-rounded" alt="Sottovento">
             <div class="card-body">
               <h5 class="card-title card-text">WEDDING PARTY</h5>
               <h6 class="card-subtitle card-text">
@@ -165,17 +172,18 @@
               <p class="card-text">
                 Via Imbarcadero 3 - 23827 - Lierna - (LC)
               </p>
-              <a href="javascript:void()" onclick="openRestaurantDirections();" class="btn btn-info btn-sm">INDICAZIONI
-                <i class="fas fa-route"></i></a>
+              <button type="button" class="btn btn-default text-white rsvp-body my-rounded-pill text-uppercase"
+                onclick="openRestaurantDirections();">Indicazioni</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="container-fluid text-center rsvp-div rounded-lg text-white">
-        <h5>Speriamo tu possa essere presente!</h5>
-        <h5>Per favore conferma la tua presenza il prima possibile tramite il pulsante qui sotto.</h5>
-        <button type="button" class="btn btn-default text-white rsvp-body" onclick="window.open('http://teoeale.rsvpify.com');">CONFERMA</button>
-      </div>
+      <!-- <div class="container-fluid text-center intro-div my-rounded text-white">
+        <p class="text-white intro">Speriamo tu possa essere presente!</p>
+        <p class="text-white intro">Per favore conferma la tua presenza il prima possibile tramite il pulsante qui sotto.</p>
+        <button type="button" class="btn btn-default text-white rsvp-body my-rounded-pill text-uppercase"
+          onclick="window.open('http://teoeale.rsvpify.com');">Conferma</button>
+      </div> -->
     </div>
   </section>
 
@@ -188,93 +196,96 @@
         </div>
       </div>
       <div class="container">
-        <div class="text-white trip-header col-lg-12 text-center pb-4 trip-div rounded-lg">
-          <h4 class="text-center">Per il nostro viaggio di nozze, abbamo scelto di visitare il GIAPPONE e la MALESIA.
-          </h4>
-          <h5>
-            Se vuoi contribuire alla realizzazione del nostro sogno, puoi farlo presso: <br />
-          </h5>
-          <h5 class="text-uppercase">
-            Agenzia viaggi Zugnoni & Company, Via Vanoni 31, 23017 Morbegno (SO)
-          </h5>
-          <h5>
+        <div class="text-white trip-header col-lg-12 text-center pb-4 intro-div my-rounded" data-aos="fade-up">
+          <p class="intro text-center">Per il nostro viaggio di nozze, abbamo scelto di visitare il GIAPPONE e la
+            MALESIA.
+          </p>
+          <p class="intro text-center">Se vuoi contribuire alla realizzazione del nostro sogno, puoi farlo presso:
+            <br />
+          </p>
+          <p class="intro text-center text-uppercase">Agenzia viaggi Zugnoni & Company, Via Vanoni 31, 23017 Morbegno
+            (SO)
+          </p>
+          <p class="intro text-center">
             Oppure contatta l'agenzia per avere il codice IBAN: <br />
             <i class="fas fa-phone"></i> 0342615511 - <i class="fas fa-mobile-alt"></i> 3666339305<br />
-            <a class="text-white link" href="mailto: agenziazugnoni@gmail.com"><i class="fas fa-envelope"></i> agenziazugnoni@gmail.com</a>
-          </h5>
+            <a class="text-white link" href="mailto: agenziazugnoni@gmail.com"><i class="fas fa-envelope"></i>
+              agenziazugnoni@gmail.com</a>
+          </p>
         </div>
       </div>
       <div class="container timeline">
         <div class="timeline-item">
           <div class="timeline-img"></div>
-          <div class="timeline-content timeline-card rounded-lg">
-            <div class="text-white timeline-img-header rounded-lg" style="background-image:url(images/Tokyo.jpg)">
-              <h5 class="rounded-lg">Tokyo</h5>
+          <div class="timeline-content timeline-card my-rounded shadow" data-aos="fade-up">
+            <div class="text-white timeline-img-header my-rounded" style="background-image:url(images/Tokyo.jpg)">
+              <span class="my-rounded">Tokyo</span>
             </div>
-            <div class="text-white timeline-date rounded-lg">22 Giugno 2020</div>
+            <div class="text-white timeline-date my-rounded">22 Giugno 2020</div>
           </div>
         </div>
         <div class="timeline-item">
           <div class="timeline-img"></div>
-          <div class="timeline-content timeline-card rounded-lg">
-            <div class="text-white timeline-img-header rounded-lg" style="background-image:url(images/Takayama.jpg)">
-              <h5 class="rounded-lg">Takayama</h5>
+          <div class="timeline-content timeline-card my-rounded shadow" data-aos="fade-up">
+            <div class="text-white timeline-img-header my-rounded" style="background-image:url(images/Takayama.jpg)">
+              <span class="my-rounded">Takayama</span>
             </div>
-            <div class="text-white timeline-date rounded-lg">26 Giugno 2020</div>
+            <div class="text-white timeline-date my-rounded">26 Giugno 2020</div>
           </div>
         </div>
         <div class="timeline-item">
           <div class="timeline-img"></div>
-          <div class="timeline-content timeline-card rounded-lg">
-            <div class="text-white timeline-img-header rounded-lg" style="background-image:url(images/Kanazawa.jpg)">
-              <h5 class="rounded-lg">Kanazawa</h5>
+          <div class="timeline-content timeline-card my-rounded shadow" data-aos="fade-up">
+            <div class="text-white timeline-img-header my-rounded" style="background-image:url(images/Kanazawa.jpg)">
+              <span class="my-rounded">Kanazawa</span>
             </div>
-            <div class="text-white timeline-date rounded-lg">27 Giugno 2020</div>
+            <div class="text-white timeline-date my-rounded">27 Giugno 2020</div>
           </div>
         </div>
         <div class="timeline-item">
           <div class="timeline-img"></div>
-          <div class="timeline-content timeline-card rounded-lg">
-            <div class="text-white timeline-img-header rounded-lg" style="background-image:url(images/Kyoto.jpg)">
-              <h5 class="rounded-lg">Kyoto</h5>
+          <div class="timeline-content timeline-card my-rounded shadow" data-aos="fade-up">
+            <div class="text-white timeline-img-header my-rounded" style="background-image:url(images/Kyoto.jpg)">
+              <span class="my-rounded">Kyoto</span>
             </div>
-            <div class="text-white timeline-date rounded-lg">28 Giugno 2020</div>
+            <div class="text-white timeline-date my-rounded">28 Giugno 2020</div>
           </div>
         </div>
         <div class="timeline-item">
           <div class="timeline-img"></div>
-          <div class="timeline-content timeline-card rounded-lg">
-            <div class="text-white timeline-img-header rounded-lg" style="background-image:url(images/Koyasan.jpg)">
-              <h5 class="rounded-lg">Koyasan</h5>
+          <div class="timeline-content timeline-card my-rounded shadow" data-aos="fade-up">
+            <div class="text-white timeline-img-header my-rounded" style="background-image:url(images/Koyasan.jpg)">
+              <span class="my-rounded">Koyasan</span>
             </div>
-            <div class="text-white timeline-date rounded-lg">1 Luglio 2020</div>
+            <div class="text-white timeline-date my-rounded">1 Luglio 2020</div>
           </div>
         </div>
         <div class="timeline-item">
           <div class="timeline-img"></div>
-          <div class="timeline-content timeline-card rounded-lg">
-            <div class="text-white timeline-img-header rounded-lg" style="background-image:url(images/Osaka.jpg)">
-              <h5 class="rounded-lg">Osaka</h5>
+          <div class="timeline-content timeline-card my-rounded shadow" data-aos="fade-up">
+            <div class="text-white timeline-img-header my-rounded" style="background-image:url(images/Osaka.jpg)">
+              <span class="my-rounded">Osaka</span>
             </div>
-            <div class="text-white timeline-date rounded-lg">2 Luglio 2020</div>
+            <div class="text-white timeline-date my-rounded">2 Luglio 2020</div>
           </div>
         </div>
         <div class="timeline-item">
           <div class="timeline-img"></div>
-          <div class="timeline-content timeline-card rounded-lg">
-            <div class="text-white timeline-img-header rounded-lg" style="background-image:url(images/Kuala-Lumpur.jpg)">
-              <h5 class="rounded-lg">Kuala Lumpur</h5>
+          <div class="timeline-content timeline-card my-rounded shadow" data-aos="fade-up">
+            <div class="text-white timeline-img-header my-rounded"
+              style="background-image:url(images/Kuala-Lumpur.jpg)">
+              <span class="my-rounded">Kuala Lumpur</span>
             </div>
-            <div class="text-white timeline-date rounded-lg">3 Luglio 2020</div>
+            <div class="text-white timeline-date my-rounded">3 Luglio 2020</div>
           </div>
         </div>
         <div class="timeline-item">
           <div class="timeline-img"></div>
-          <div class="timeline-content timeline-card rounded-lg">
-            <div class="text-white timeline-img-header rounded-lg" style="background-image:url(images/Redang.jpg)">
-              <h5 class="rounded-lg">Redang</h5>
+          <div class="timeline-content timeline-card my-rounded shadow" data-aos="fade-up">
+            <div class="text-white timeline-img-header my-rounded" style="background-image:url(images/Redang.jpg)">
+              <span class="my-rounded">Redang</span>
             </div>
-            <div class="text-white timeline-date rounded-lg">4 Luglio 2020</div>
+            <div class="text-white timeline-date my-rounded">4 Luglio 2020</div>
           </div>
         </div>
       </div>
@@ -375,7 +386,7 @@
     </div>
     <div class="container-fluid footer-copyright text-center text-white">
       <div>
-        Copyright 2020 Matteo Malgesini ©
+        Copyright 2021 Matteo Malgesini ©
       </div>
     </div>
   </footer>
@@ -392,6 +403,12 @@
     crossorigin="anonymous"></script>
 
   <script src="scripts/main.js"></script>
+  <script src="aos/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: 'ease-in-out-sine'
+    });
+  </script>
 
 </body>
 
