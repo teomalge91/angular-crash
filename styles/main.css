@@ -391,46 +391,71 @@ section {
   height: 35vh;
 }
 
+.when-where-btn {
+  background-color: #444;
+  border-color: #444;
+  margin-top: 2vh;
+}
+
+.when-where-btn:hover {
+  background-color: rgb(49, 48, 48);
+  border-color: rgb(49, 48, 48);
+  color: #fff;
+}
+
+.when-where-btn:focus,
+.when-where-btn:active,
+.when-where-btn.aria-pressed {
+  background-color: rgb(49, 48, 48);
+  border-color: rgb(49, 48, 48);
+  color: #fff;
+  box-shadow: none;
+}
+
 /* RSVP */
 
-.rsvp {
+.rsvp-div {
+  padding: 2vh;
+}
+
+.rsvp-btn {
   background-color: #fc6d6d;
   border-color: #fc6d6d;
   max-width: wrap;
 }
 
-.rsvp:hover {
+.rsvp-btn:hover {
   background-color: #df5252;
   border-color: #df5252;
   color: #fff;
 }
 
-.rsvp:focus,
-.rsvp:active,
-.rsvp.aria-pressed {
+.rsvp-btn:focus,
+.rsvp-btn:active,
+.rsvp-btn.aria-pressed {
   background-color: #df5252;
   border-color: #df5252;
   box-shadow: none;
   color: #fff;
 }
 
-.rsvp-body {
-  background-color: #444;
-  border-color: #444;
+.rsvp-btn-body {
+  background-color: #df5252;
+  border-color: #df5252;
   margin-top: 2vh;
 }
 
-.rsvp-body:hover {
-  background-color: rgb(49, 48, 48);
-  border-color: rgb(49, 48, 48);
+.rsvp-btn-body:hover {
+  background-color: #df5252;
+  border-color: #df5252;
   color: #fff;
 }
 
-.rsvp-body:focus,
-.rsvp-body:active,
-.rsvp-body.aria-pressed {
-  background-color: rgb(49, 48, 48);
-  border-color: rgb(49, 48, 48);
+.rsvp-btn-body:focus,
+.rsvp-btn-body:active,
+.rsvp-btn-body.aria-pressed {
+  background-color: #df5252;
+  border-color: #df5252;
   color: #fff;
   box-shadow: none;
 }
@@ -608,7 +633,7 @@ section {
     font-size: 10vw;
   }
 
-  .rsvp{
+  .rsvp-btn{
     padding: 0.5vh;
     font-size: 1.5vh;
   }
@@ -666,7 +691,7 @@ section {
     font-size: 2vh;
   }
 
-  .rsvp {
+  .rsvp-btn {
     font-size: 3vh;
   }
 
