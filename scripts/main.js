@@ -28,18 +28,18 @@ $(window).on("load", function (e) {
     $(".loader-container").fadeOut("slow");
 });
 
-//Click su link lo attiva
-$(".nav .nav-link").on("click", function(){
-    $(".nav").find(".active").removeClass("active");
-    $(this).addClass("active");
- });
+// //Click su link lo attiva
+// $(".nav .nav-link").on("click", function(){
+//     $(".nav").find(".active").removeClass("active");
+//     $(this).addClass("active");
+//  });
 
-$(document).ready(function () {
-    // toggle "navbar-no-bg" class
-    $('.top-content .text').waypoint(function () {
-        $('nav').toggleClass('navbar-no-bg');
-    });
-});
+// $(document).ready(function () {
+//     // toggle "navbar-no-bg" class
+//     $('.top-content .text').waypoint(function () {
+//         $('nav').toggleClass('navbar-no-bg');
+//     });
+// });
 
 //funzione per cambiare icona al click sull'hamburger menu
 $(document).ready(function () {
