@@ -1,8 +1,12 @@
+
+//Avvio plugin per animazioni
 $(document).ready(function () {
     AOS.init({
         easing: 'ease-in-out-sine'
   });
 });
+
+//Funzione per calcolare l'altezza della pagina
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 let vh = window.innerHeight * 0.01;
 // Then we set the value in the --vh custom property to the root of the document
@@ -27,19 +31,6 @@ $(window).on("load", function (e) {
     // Animate loader off screen
     $(".loader-container").fadeOut("slow");
 });
-
-// //Click su link lo attiva
-// $(".nav .nav-link").on("click", function(){
-//     $(".nav").find(".active").removeClass("active");
-//     $(this).addClass("active");
-//  });
-
-// $(document).ready(function () {
-//     // toggle "navbar-no-bg" class
-//     $('.top-content .text').waypoint(function () {
-//         $('nav').toggleClass('navbar-no-bg');
-//     });
-// });
 
 //funzione per cambiare icona al click sull'hamburger menu
 $(document).ready(function () {
