@@ -10,7 +10,7 @@
   <meta name="robots" content="noindex" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="styles/main.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
   <link href="https://fonts.googleapis.com/css?family=Forum&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="aos/aos.css" />
@@ -25,10 +25,10 @@
   </div>
 
   <!-- NAVBAR -->
-  <nav id="navigator" class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg text-uppercase">
+  <nav id="navigator" class="navbar navbar-light fixed-top navbar-expand-md bg-white text-uppercase">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-        <img src="images/logo-bianco.png" width="40" height="40" alt="A M">
+        <img src="images/logo.png" width="40" height="40" alt="A M">
       </a>
       <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#main-navigation">
         <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
@@ -36,21 +36,21 @@
       <div class="collapse navbar-collapse" id="main-navigation">
         <ul class="nav navbar-nav ml-auto text-center">
           <li>
-            <a class="nav-link text-white" href="#home-section" data-toggle="collapse"
+            <a class="nav-link" href="#home-section" data-toggle="collapse"
               data-target=".navbar-collapse.show">Home</a>
           </li>
           <li>
-            <a class="nav-link text-white" href="#when-where-section" data-toggle="collapse"
+            <a class="nav-link" href="#when-where-section" data-toggle="collapse"
               data-target=".navbar-collapse.show">Quando E Dove</a>
           </li>
           <li>
-            <a class="nav-link text-white" href="#trip-section" data-toggle="collapse"
+            <a class="nav-link" href="#trip-section" data-toggle="collapse"
               data-target=".navbar-collapse.show">Il
               Nostro Viaggio
             </a>
           </li>
           <!-- <li>
-            <a class="nav-link" href="#gallery-section" data-toggle="collapse"
+            <a class="nav-link my-text-black" href="#gallery-section" data-toggle="collapse"
               data-target=".navbar-collapse.show">Foto
             </a>
           </li> -->
@@ -88,7 +88,12 @@
 
   <!-- COUNTDOWN -->
   <section id="countdown-section" class="countdown-section">
+    <div class="container text-center" id="countdown">
+      <h2 class="mt0 text-black section-header">Sei invitato</h2>
+      
+    </div>
     <div class="container text-white text-center countdown-container" id="countdown">
+      <p class="text-white bigger-text">Mancano</p>
       <div class="row mx-auto font-weight-bold h-20">
         <div class="col-3">
           <span id="days" class="countdown-time">0</span>
@@ -127,9 +132,9 @@
     <div class="container">
       <div class="where-header row mb40 text-center">
         <div class="col-md-12">
-          <h2 class="mt0 text-white section-header">Quando e dove</h2>
-          <div class="intro-div my-rounded">
-            <p class="text-white default-text">Prima della cerimonia attendiamo gli invitati nelle case dei genitori degli sposi per
+          <h2 class="mt0 text-black section-header">Quando e dove</h2>
+          <div class="intro-div">
+            <p class="text-black default-text">Prima della cerimonia attendiamo gli invitati nelle case dei genitori degli sposi per
               un breve rinfresco.
             </p>
           </div>
@@ -137,17 +142,17 @@
       </div>
       <div class="row text-center">
         <div class="col-md-6 d-flex justify-content-center">
-          <div class="where-card card shadow text-center my-rounded" data-aos="fade-up" data-aos-once="true">
-            <img src="images/chiesa.png" class="card-img-top my-rounded" alt="chiesa">
+          <div class="where-card card shadow text-center" data-aos="fade-up" data-aos-once="true">
+            <img src="images/chiesa.png" class="card-img-top" alt="chiesa">
             <div class="card-body">
-              <h5 class="card-title">CERIMONIA</h5>
-              <h6 class="card-subtitle">
+              <h5 class="bigger-text card-title text-black">CERIMONIA</h5>
+              <h6 class="default-text card-subtitle text-black">
                 22 Maggio 2021 ore 15.00
               </h6>
-              <h5 class="card-title">
+              <h5 class="bigger-text card-title text-black">
                 Parrocchia di Regoledo
               </h5>
-              <p class="card-text default-text">
+              <p class="card-text default-text text-black">
                 Piazza S. Ambrogio - 23013</br>Cosio Valtellino (SO)
               </p>
               <button type="button" class="btn btn-default text-white when-where-btn my-rounded-pill text-uppercase"
@@ -156,17 +161,17 @@
           </div>
         </div>
         <div class="col-md-6 d-flex justify-content-center when-where-card">
-          <div class="where-card card shadow text-center my-rounded" data-aos="fade-up" data-aos-once="true">
-            <img src="images/ristorante.jpg" class="card-img-top my-rounded" alt="Sottovento">
+          <div class="where-card card shadow text-center" data-aos="fade-up" data-aos-once="true">
+            <img src="images/ristorante.jpg" class="card-img-top" alt="Sottovento">
             <div class="card-body">
-              <h5 class="card-title">WEDDING PARTY</h5>
-              <h6 class="card-subtitle">
+              <h5 class="bigger-text card-title text-black">WEDDING PARTY</h5>
+              <h6 class="default-text card-subtitle text-black">
                 A seguire
               </h6>
-              <h5 class="card-title">
+              <h5 class="bigger-text card-title text-black">
                 Ristorante Sottovento
               </h5>
-              <p class="card-text default-text">
+              <p class="card-text default-text text-black">
                 Via Imbarcadero 3 - 23827</br>Lierna (LC)
               </p>
               <button type="button" class="btn btn-default text-white when-where-btn my-rounded-pill text-uppercase"
@@ -181,13 +186,13 @@
   <!-- VIAGGIO -->
   <section id="trip-section" class="trip-section">
     <div class="container py-1">
-      <div class="text-white trip-header row mb40 text-center">
+      <div class="text-black trip-header row mb40 text-center">
         <div class="col-md-12">
           <h2 class="mt0 section-header">Il nostro viaggio</h2>
         </div>
       </div>
       <div class="container">
-        <div class="text-white trip-header col-lg-12 text-center pb-4 intro-div my-rounded">
+        <div class="text-black trip-header col-lg-12 text-center pb-4 intro-div">
           <p class="default-text text-center">Per il nostro viaggio di nozze, abbamo scelto di visitare il GIAPPONE e la
             MALESIA.
           </p>
@@ -210,9 +215,9 @@
       <div class="container timeline">
         <div class="timeline-item">
           <div class="timeline-img"></div>
-          <div class="timeline-content card shadow text-center my-rounded" data-aos="fade-up" data-aos-offset="90" data-aos-once="true">
-            <img src="images/Tokyo.jpg" class="my-rounded" alt="Tokyo">
-            <div class="card-body">
+          <div class="timeline-content card shadow text-center" data-aos="fade-up" data-aos-offset="90" data-aos-once="true">
+            <img src="images/Tokyo.jpg" alt="Tokyo">
+            <div class="card-body text-black">
               <div class="row">
                 <div class="col-sm-6 px-0">
                   <p class="default-text card-text text-center text-uppercase">Tokyo
@@ -228,9 +233,9 @@
         </div>
         <div class="timeline-item">
           <div class="timeline-img"></div>
-          <div class="timeline-content card shadow text-center my-rounded" data-aos="fade-up" data-aos-offset="90" data-aos-once="true">
-            <img src="images/Takayama.jpg" class="my-rounded" alt="Takayama">
-            <div class="card-body">
+          <div class="timeline-content card shadow text-center" data-aos="fade-up" data-aos-offset="90" data-aos-once="true">
+            <img src="images/Takayama.jpg" alt="Takayama">
+            <div class="card-body text-black">
               <div class="row">
                 <div class="col-sm-6 px-0">
                   <p class="default-text card-text text-center text-uppercase">Takayama
@@ -246,9 +251,9 @@
         </div>
         <div class="timeline-item">
           <div class="timeline-img"></div>
-          <div class="timeline-content card shadow text-center my-rounded" data-aos="fade-up" data-aos-offset="90" data-aos-once="true">
-            <img src="images/Kanazawa.jpg" class="my-rounded" alt="Kanazawa">
-            <div class="card-body">
+          <div class="timeline-content card shadow text-center" data-aos="fade-up" data-aos-offset="90" data-aos-once="true">
+            <img src="images/Kanazawa.jpg" alt="Kanazawa">
+            <div class="card-body text-black">
               <div class="row">
                 <div class="col-sm-6 px-0">
                   <p class="default-text card-text text-center text-uppercase">Kanazawa
@@ -264,9 +269,9 @@
         </div>
         <div class="timeline-item">
           <div class="timeline-img"></div>
-          <div class="timeline-content card shadow text-center my-rounded" data-aos="fade-up" data-aos-offset="90" data-aos-once="true">
-            <img src="images/Kyoto.jpg" class="my-rounded" alt="Kyoto">
-            <div class="card-body">
+          <div class="timeline-content card shadow text-center" data-aos="fade-up" data-aos-offset="90" data-aos-once="true">
+            <img src="images/Kyoto.jpg" alt="Kyoto">
+            <div class="card-body text-black">
               <div class="row">
                 <div class="col-sm-6 px-0">
                   <p class="default-text card-text text-center text-uppercase">Kyoto
@@ -282,9 +287,9 @@
         </div>
         <div class="timeline-item">
           <div class="timeline-img"></div>
-          <div class="timeline-content card shadow text-center my-rounded" data-aos="fade-up" data-aos-offset="90" data-aos-once="true">
-            <img src="images/Osaka.jpg" class="my-rounded" alt="Osaka">
-            <div class="card-body">
+          <div class="timeline-content card shadow text-center" data-aos="fade-up" data-aos-offset="90" data-aos-once="true">
+            <img src="images/Osaka.jpg" alt="Osaka">
+            <div class="card-body text-black">
               <div class="row">
                 <div class="col-sm-6 px-0">
                   <p class="default-text card-text text-center text-uppercase">Osaka
@@ -300,9 +305,9 @@
         </div>
         <div class="timeline-item">
           <div class="timeline-img"></div>
-          <div class="timeline-content card shadow text-center my-rounded" data-aos="fade-up" data-aos-offset="90" data-aos-once="true">
-            <img src="images/Kuala-Lumpur.jpg" class="my-rounded" alt="Kuala Lumpur">
-            <div class="card-body">
+          <div class="timeline-content card shadow text-center" data-aos="fade-up" data-aos-offset="90" data-aos-once="true">
+            <img src="images/Kuala-Lumpur.jpg" alt="Kuala Lumpur">
+            <div class="card-body text-black">
               <div class="row">
                 <div class="col-sm-6 px-0">
                   <p class="default-text card-text text-center text-uppercase">Kuala Lumpur
@@ -318,9 +323,9 @@
         </div>
         <div class="timeline-item">
           <div class="timeline-img"></div>
-          <div class="timeline-content card shadow text-center my-rounded" data-aos="fade-up" data-aos-offset="90" data-aos-once="true">
-            <img src="images/Redang.jpg" class="my-rounded" alt="Redang">
-            <div class="card-body">
+          <div class="timeline-content card shadow text-center" data-aos="fade-up" data-aos-offset="90" data-aos-once="true">
+            <img src="images/Redang.jpg" alt="Redang">
+            <div class="card-body text-black">
               <div class="row">
                 <div class="col-sm-6 px-0">
                   <p class="default-text card-text text-center text-uppercase">Redang
@@ -338,8 +343,8 @@
   </section>
   <section id="rsvp-section" class="rsvp-section">
     <div class="container text-center text-white rsvp-div">
-      <p class="text-white default-text">Speriamo tu possa essere presente!</p>
-      <p class="text-white default-text">Per favore conferma la tua presenza il prima possibile</p>
+      <p class="text-black font-weight-bold bigger-text">Speriamo tu possa essere presente!</p>
+      <p class="text-black default-text">Per favore conferma la tua presenza il prima possibile</p>
       <button type="button" class="btn btn-default text-white rsvp-btn-body my-rounded-pill text-uppercase"
         onclick="window.open('http://teoeale.rsvpify.com');">Conferma</button>
     </div>
