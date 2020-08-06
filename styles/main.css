@@ -5,7 +5,7 @@ html {
 
 body {
   position: relative;
-  background: #444444;
+  background: #ffffff;
   font-family: 'Forum', cursive;
 }
 
@@ -17,11 +17,7 @@ section {
 
 .section-header {
   font-family: 'Mr Dafoe', cursive;
-  font-size: 12vh;
-}
-
-.my-rounded{
-  border-radius: 30px;
+  font-size: 9vh;
 }
 
 .my-rounded-pill{
@@ -32,24 +28,26 @@ section {
   margin-top: 2vh;
   margin-bottom: 2vh;
   padding: 3vh;
-  background:
-  /* top, transparent black, faked with gradient */ 
-  linear-gradient(
-    rgba(0, 0, 0, 0.2), 
-    rgba(0, 0, 0, 0.2)
-  ),
-  /* bottom, image */ center no-repeat;
-  background-size: cover;
 }
 
 .default-text {
-  font-size: 22px;
+  font-size: 24px;
   line-height: 30px;
+  font-family: 'Forum', cursive;
+}
+
+.bigger-text {
+  font-size: 28px;
+  line-height: 34px;
   font-family: 'Forum', cursive;
 }
 
 .my-text-gray {
   color: #444444;
+}
+
+.text-black {
+  color: #000000;
 }
 
 /* LOADER */
@@ -132,36 +130,22 @@ section {
 
 /* NAVBAR */
 
-.navbar {
-  background: #444444;
-  -o-transition: all .6s;
-  -moz-transition: all .6s;
-  -webkit-transition: all .6s;
-  -ms-transition: all .6s;
-  transition: all .6s;
-  backface-visibility: hidden;
-}
-
-.navbar.navbar-no-bg {
-  background: #444444;
-  background: rgba(0, 0, 0, 0.4);
-}
-
 .navbar-dark .navbar-nav {
   font-size: 2.5vh;
-  color: #ffffff;
 }
 
 .navbar-dark .navbar-nav .nav-link {
   border: 0;
+  color: #FFFFFF;
+  font-size: 3vh;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .navbar-dark .navbar-nav .nav-link:focus {
-  color: #ffffff;
+  color: #FFFFFF;
   outline: 0;
 }
 
@@ -212,10 +196,7 @@ section {
   -moz-transition: .25s ease-in-out;
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
-}
-  
-.animated-icon span {
-  background: #ffffff;
+  background-color: #FFFFFF;
 }
   
 .animated-icon span:nth-child(1) {
@@ -355,14 +336,18 @@ section {
 /* COUNTDOWN */
 
 .countdown-section {
-  background-image: linear-gradient(#AD2E24,#fc6d6d);
-  background-size: cover;
-  background-position: center;
   position: relative;
   overflow: hidden;
   padding-top: 12vh;
   padding-bottom: 4vh;
   min-height: auto;
+}
+
+.countdown-container{
+  background-image: linear-gradient(#AD2E24,#fc6d6d);
+  background-size: cover;
+  background-position: center;
+  padding: 2vh;
 }
 
 .countdown-time {
@@ -375,10 +360,14 @@ section {
   font-size: 3vh;
 }
 
+.bride-groom-card-title {
+  font-size: 10vh;
+  font-family: 'Mr Dafoe', cursive;
+}
+
 /* WHEN & WHERE */
 
 .when-where-section {
-  background: #fc6d6d center;
   padding-top: 12vh;
   min-height: auto;
 }
@@ -467,7 +456,6 @@ section {
 
 /* VIAGGIO */
 .trip-section {
-  background: #fc6d6d;
   padding-top: 12vh;
   min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   min-height: calc(var(--vh, 1vh) * 100);
@@ -482,7 +470,7 @@ section {
 
 .timeline::before {
   content: '';
-  background: #ffffff;
+  background: #444444;
   width: 5px;
   height: 100%;
   position: absolute;
@@ -508,7 +496,7 @@ section {
   top: 30px;
   left: -15px;
   border-width: 10px 15px 10px 0;
-  border-color: transparent #f5f5f5 transparent transparent;
+  border-color: transparent #444444 transparent transparent;
 }
 
 .timeline-item::after {
@@ -521,11 +509,12 @@ section {
   position: relative;
   width: 45%;
   height: 30%;
-  background: #f5f5f5;
+  background: #FFFFFF;
 }
 
 .timeline-content img {
   height: 30vh;
+  background: #444444;
 }
 
 .timeline-content::after {
@@ -537,7 +526,7 @@ section {
   top: 30px;
   right: -15px;
   border-width: 10px 0 10px 15px;
-  border-color: transparent transparent transparent #f5f5f5;
+  border-color: transparent transparent transparent #444444;
 }
 
 .timeline-img {
@@ -657,21 +646,14 @@ section {
     font-family: 'Forum', cursive;
   }
 
+  .bigger-text {
+    font-size: 22px;
+    line-height: 24px;
+    font-family: 'Forum', cursive;
+  }
+
   .navbar-expand-md .navbar-nav .nav-link { 
     font-size: 3vh;
-  }
-
-  .navbar.navbar-no-bg { 
-    background: #444444; 
-  }
-
-  .navbar-dark .navbar-toggler { 
-    border-color: #444444; 
-  }
-
-  .navbar-dark .navbar-toggler:focus { 
-    background: #444444; 
-    outline: 0; 
   }
 
   .navbar-expand-md .navbar-nav .nav-link { 
@@ -733,7 +715,7 @@ section {
     top: 30px;
     left: -15px;
     border-width: 10px 15px 10px 0;
-    border-color: transparent #ffffff transparent transparent;
+    border-color: transparent #444444 transparent transparent;
   }
 
   .timeline-item:nth-child(odd) .timeline-content .timeline-date {
