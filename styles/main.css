@@ -134,18 +134,18 @@ section {
   font-size: 2.5vh;
 }
 
-.navbar-dark .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link {
   border: 0;
-  color: #FFFFFF;
+  color: #000000;
   font-size: 3vh;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #FFFFFF;
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #000000;
 }
 
-.navbar-dark .navbar-nav .nav-link:focus {
-  color: #FFFFFF;
+.navbar-light .navbar-nav .nav-link:focus {
+  color: #000000;
   outline: 0;
 }
 
@@ -196,7 +196,7 @@ section {
   -moz-transition: .25s ease-in-out;
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
-  background-color: #FFFFFF;
+  background-color: #000000;
 }
   
 .animated-icon span:nth-child(1) {
