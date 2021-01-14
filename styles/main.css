@@ -24,6 +24,10 @@ section {
   border-radius: 100px;
 }
 
+hr.solid {
+  border-top: 2px solid #444444;
+}
+
 .intro-div {
   margin-top: 2vh;
   margin-bottom: 2vh;
@@ -390,7 +394,7 @@ section {
 /* QUANDO & DOVE */
 
 .when-where-section {
-  padding-top: 12vh;
+  padding-top: 8vh;
   min-height: auto;
 }
 
@@ -447,6 +451,8 @@ section {
 /* RSVP */
 
 .rsvp-div {
+  margin-top: 6vh;
+  padding-top: 8vh;
   padding: 4vh;
   background-color: #444444;
 }
