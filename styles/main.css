@@ -338,7 +338,7 @@ section {
 .countdown-section {
   position: relative;
   overflow: hidden;
-  padding-top: 12vh;
+  
   padding-bottom: 4vh;
   min-height: auto;
 }
@@ -360,12 +360,34 @@ section {
   font-size: 3vh;
 }
 
-.bride-groom-card-title {
-  font-size: 10vh;
-  font-family: 'Mr Dafoe', cursive;
+/* GLI SPOSI */
+
+.bride-groom-section {
+  padding-top: 12vh;
+  min-height: auto;
 }
 
-/* WHEN & WHERE */
+.bride-groom-container {
+  padding-top: 4vh;
+  margin-top: 2vh;
+  background-color: #df5252;
+}
+
+.bride-groom-img {
+  height: 47vh;
+}
+
+.bride-groom-card-title {
+  font-size: 7vh;
+  font-family: 'Forum', cursive;
+}
+
+.bride-groom-card-subtitle {
+  font-size: 5vh;
+  font-family: 'Forum', cursive;
+}
+
+/* QUANDO & DOVE */
 
 .when-where-section {
   padding-top: 12vh;
@@ -406,10 +428,27 @@ section {
   box-shadow: none;
 }
 
+/* TESTIMONI */
+
+.testimoni-section {
+  padding-top: 12vh;
+  min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+
+.testimoni-row {
+  padding: 4vh;
+  background-color: #df5252;
+}
+
+.testimone-txt {
+  margin-top: 2vh;
+}
 /* RSVP */
 
 .rsvp-div {
   padding: 4vh;
+  background-color: #444444;
 }
 
 .rsvp-btn {
@@ -456,7 +495,7 @@ section {
 
 /* VIAGGIO */
 .trip-section {
-  padding-top: 12vh;
+  padding-top: 10vh;
   min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   min-height: calc(var(--vh, 1vh) * 100);
 }
@@ -641,13 +680,13 @@ section {
 @media (max-width: 767px) and (orientation: portrait) {
 
   .default-text {
-    font-size: 18px;
+    font-size: 22px;
     line-height: 21px;
     font-family: 'Forum', cursive;
   }
 
   .bigger-text {
-    font-size: 22px;
+    font-size: 28px;
     line-height: 24px;
     font-family: 'Forum', cursive;
   }
@@ -678,6 +717,10 @@ section {
   .countdown-desc {
     font-family: 'Forum', cursive;
     font-size: 2vh;
+  }
+
+  .bride-groom-img {
+    height: 33vh;
   }
 
   .rsvp-btn {
