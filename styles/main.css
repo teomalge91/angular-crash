@@ -436,8 +436,7 @@ hr.solid {
 
 .testimoni-section {
   padding-top: 12vh;
-  min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-  min-height: calc(var(--vh, 1vh) * 100);
+  min-height: auto;
 }
 
 .testimoni-row {
@@ -451,7 +450,7 @@ hr.solid {
 /* RSVP */
 
 .rsvp-div {
-  margin-top: 6vh;
+  /* margin-top: 6vh; */
   padding-top: 8vh;
   padding: 4vh;
   background-color: #444444;
