@@ -25,7 +25,7 @@ section {
 }
 
 hr.solid {
-  border-top: 2px solid #444444;
+  border-top: 2px solid #FFFFFF;
 }
 
 .intro-div {
@@ -448,14 +448,6 @@ hr.solid {
   margin-top: 2vh;
 }
 /* RSVP */
-
-.rsvp-div {
-  /* margin-top: 6vh; */
-  padding-top: 8vh;
-  padding: 4vh;
-  background-color: #444444;
-}
-
 .rsvp-btn {
   background-color: #fc6d6d;
   border-color: #fc6d6d;
@@ -616,34 +608,19 @@ hr.solid {
 
 /* FOOTER */
 
-.footer-contacts {
-  background-color: #fc6d6d;
-  background:
-  /* top, transparent black, faked with gradient */ 
-  linear-gradient(
-    rgba(0, 0, 0, 0.6), 
-    rgba(0, 0, 0, 0.6)
-  ),
-  /* bottom, image */ url("../images/coppia-jappo.png") center no-repeat;
-  background-size: cover;
-  height: 42vh;
-  width: 100vw;
-  margin-bottom: 0;
-}
-
-.link {
-  font-family: 'Forum', cursive !important;
-}
-
-.link:hover {
-  text-decoration: underline;
+footer{
+	padding-top: 5vh;
+	background-color: #444444;
+	height: auto;
 }
 
 .footer-copyright {
-  background-color: #444444;
-  height: auto;
+  background-color: #000000;
 }
 
+.footer-copyright p {
+  padding-top: 2vh;
+}
 /* MEDIA QUERIES */
 
 /* iPad portrait */
