@@ -13,11 +13,16 @@ section {
   position: relative;
   width: 100%;
   height: 100%;
+  padding: 5vh 0;
+}
+
+.colored-section {
+  background-color: #df5252;
 }
 
 .section-header {
   font-family: 'Mr Dafoe', cursive;
-  font-size: 9vh;
+  font-size: 10vh;
 }
 
 .my-rounded-pill{
@@ -60,7 +65,7 @@ hr.solid {
   width: 100%;
   height: 1000vh;
   position: absolute;
-  background: #fc6d6d;
+  background: #df5252;
   padding: 0%;
   margin: 0%;
   z-index: 2001;
@@ -245,7 +250,6 @@ hr.solid {
   left: 50%;
 }
 
-
 /* HOME */
 
 .home-section{
@@ -342,15 +346,13 @@ hr.solid {
 .countdown-section {
   position: relative;
   overflow: hidden;
-  
-  padding-bottom: 4vh;
   min-height: auto;
+  background-image: linear-gradient(#8b0f0fce ,#df5252);
+  background-size: cover;
+  background-position: center;
 }
 
 .countdown-container{
-  background-image: linear-gradient(#AD2E24,#fc6d6d);
-  background-size: cover;
-  background-position: center;
   padding: 2vh;
 }
 
@@ -366,15 +368,9 @@ hr.solid {
 
 /* GLI SPOSI */
 
-.bride-groom-section {
-  padding-top: 12vh;
-  min-height: auto;
-}
-
 .bride-groom-container {
   padding-top: 4vh;
   margin-top: 2vh;
-  background-color: #df5252;
 }
 
 .bride-groom-img {
@@ -392,11 +388,6 @@ hr.solid {
 }
 
 /* QUANDO & DOVE */
-
-.when-where-section {
-  padding-top: 8vh;
-  min-height: auto;
-}
 
 .where-header {
   margin-bottom: 2vh;
@@ -434,11 +425,6 @@ hr.solid {
 
 /* TESTIMONI */
 
-.testimoni-section {
-  padding-top: 12vh;
-  min-height: auto;
-}
-
 .testimoni-row {
   padding: 4vh;
   background-color: #df5252;
@@ -454,8 +440,8 @@ hr.solid {
 }
 
 .rsvp-btn {
-  background-color: #fc6d6d;
-  border-color: #fc6d6d;
+  background-color: #df5252;
+  border-color: #df5252;
   max-width: wrap;
 }
 
@@ -497,7 +483,6 @@ hr.solid {
 
 /* VIAGGIO */
 .trip-section {
-  padding-top: 10vh;
   min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   min-height: calc(var(--vh, 1vh) * 100);
 }
@@ -592,14 +577,6 @@ hr.solid {
 }
 
 /* GALLERY */
-
-.gallery-section {
-  background: #fc6d6d;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  padding-top: 3vh;
-}
 
 .gallery-header h2 {
     padding-top: 10vh;
