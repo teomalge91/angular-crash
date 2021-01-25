@@ -447,7 +447,12 @@ hr.solid {
 .testimone-txt {
   margin-top: 2vh;
 }
+
 /* RSVP */
+.rsvp-div {
+  padding: 3vh;
+}
+
 .rsvp-btn {
   background-color: #fc6d6d;
   border-color: #fc6d6d;
