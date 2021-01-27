@@ -153,7 +153,7 @@ hr.solid {
 .navbar-light .navbar-nav .nav-link {
   border: 0;
   color: #000000;
-  font-size: 3vh;
+  font-size: 2.5vh;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -269,7 +269,7 @@ hr.solid {
 }
 
 .home-container{
-  padding-top: 15vh;
+  padding-top: 8vh;
 }
 
 .home-section h1{
@@ -380,18 +380,8 @@ hr.solid {
   margin-top: 2vh;
 }
 
-.bride-groom-img {
-  height: 47vh;
-}
-
-.bride-groom-card-title {
-  font-size: 7vh;
-  font-family: 'Forum', cursive;
-}
-
-.bride-groom-card-subtitle {
-  font-size: 5vh;
-  font-family: 'Forum', cursive;
+.bride-groom-container img{
+  max-width: 100%;
 }
 
 /* QUANDO & DOVE */
@@ -409,27 +399,6 @@ hr.solid {
   height: 35vh;
 }
 
-.when-where-btn {
-  background-color: #444444;
-  border-color: #444444;
-  margin-top: 2vh;
-}
-
-.when-where-btn:hover {
-  background-color: #444444;
-  border-color: #444444;
-  color: #ffffff;
-}
-
-.when-where-btn:focus,
-.when-where-btn:active,
-.when-where-btn.aria-pressed {
-  background-color: #444444;
-  border-color: #444444;
-  color: #ffffff;
-  box-shadow: none;
-}
-
 /* TESTIMONI */
 
 .testimoni-row {
@@ -441,6 +410,10 @@ hr.solid {
   margin-top: 2vh;
 }
 
+.testimoni-row img{
+  max-width: 100%;
+}
+
 /* RSVP */
 .rsvp-div {
   padding: 3vh;
@@ -449,7 +422,9 @@ hr.solid {
 .rsvp-btn {
   background-color: #df5252;
   border-color: #df5252;
-  max-width: wrap;
+  min-width: wrap;
+  max-width: 60%;
+  align-self: center;
 }
 
 .rsvp-btn:hover {
