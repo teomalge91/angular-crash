@@ -32,8 +32,29 @@ section:before {
   font-size: 10vh;
 }
 
-.my-rounded-pill{
+.rounded-btn {
+  background-color: #df5252;
+  border-color: #df5252;
+  min-width: wrap;
+  max-width: 60%;
+  align-self: center;
   border-radius: 100px;
+}
+
+.rounded-btn:hover {
+  background-color: #df5252;
+  border-color: #df5252;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.rounded-btn:focus,
+.rounded-btn:active,
+.rounded-btn.aria-pressed {
+  background-color: #df5252;
+  border-color: #df5252;
+  box-shadow: none;
+  color: #ffffff;
 }
 
 hr.solid {
@@ -419,49 +440,8 @@ hr.solid {
   padding: 3vh;
 }
 
-.rsvp-btn {
-  background-color: #df5252;
-  border-color: #df5252;
-  min-width: wrap;
-  max-width: 60%;
-  align-self: center;
-}
 
-.rsvp-btn:hover {
-  background-color: #df5252;
-  border-color: #df5252;
-  color: #ffffff;
-}
 
-.rsvp-btn:focus,
-.rsvp-btn:active,
-.rsvp-btn.aria-pressed {
-  background-color: #df5252;
-  border-color: #df5252;
-  box-shadow: none;
-  color: #ffffff;
-}
-
-.rsvp-btn-body {
-  background-color: #df5252;
-  border-color: #df5252;
-  margin-top: 2vh;
-}
-
-.rsvp-btn-body:hover {
-  background-color: #df5252;
-  border-color: #df5252;
-  color: #ffffff;
-}
-
-.rsvp-btn-body:focus,
-.rsvp-btn-body:active,
-.rsvp-btn-body.aria-pressed {
-  background-color: #df5252;
-  border-color: #df5252;
-  color: #ffffff;
-  box-shadow: none;
-}
 
 /* VIAGGIO */
 .trip-section {
