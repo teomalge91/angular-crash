@@ -3,7 +3,7 @@
 $(document).ready(function () {
     AOS.init({
         easing: 'ease-in-out-sine'
-  });
+    });
 });
 
 //Funzione per calcolare l'altezza della pagina
@@ -40,7 +40,7 @@ $(document).ready(function () {
 });
 
 //funzione per il countdown
-var weddingday = new Date(2021, 04, 22, 15, 00); //il mese parte da 0 quindi maggio è il 04
+var weddingday = new Date(2021, 06, 03, 15, 00); //il mese parte da 0 quindi luglio è il 06
 var timing = setInterval(
     function () {
         var currentDate = new Date().getTime();
