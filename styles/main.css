@@ -70,7 +70,7 @@ hr.solid {
 .green-div {
   margin-top: 2vh;
   padding: 3vh;
-  background-color: green;
+  background-color: #05791e;
   border-radius: 20px;
 }
 
@@ -425,6 +425,29 @@ hr.solid {
 
 .where-card img {
   height: 35vh;
+}
+
+.rounded-btn-white {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  min-width: wrap;
+  max-width: 60%;
+  align-self: center;
+  border-radius: 100px;
+}
+
+.rounded-btn-white:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  opacity: 0.9;
+}
+
+.rounded-btn-white:focus,
+.rounded-btn-white:active,
+.rounded-btn-white.aria-pressed {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  box-shadow: none;
 }
 
 /* TESTIMONI */
